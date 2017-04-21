@@ -1,0 +1,80 @@
+@import "./shared-style/colors";
+@import "./shared-style/breakpoints";
+@import "./shared-style/variables";
+
+.main-container {
+    height: 100%;
+
+    .ui.menu {
+        justify-content: center;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        padding: 1.5rem;
+        margin-bottom: 30px;
+
+        // General Menu Styling
+        .menu-item {
+            text-align: center;
+            transition: 0.5s;
+            font-family: @font-family--header;
+            text-transform: uppercase;
+
+            &:hover {
+                background: transparent;
+            }
+            &.active.item {
+                background-color: transparent;
+                color: red;
+                transition: 0.5s;
+            }
+            &.home-link {
+                font-size: 30px;
+                letter-spacing: 3px;
+
+                &.active.item {
+                    color: @semantic-black;
+                }
+            }
+        }
+        &.desktop {
+            display: none;
+        }
+
+        // Mobile Menu Styling
+        .dropdown {
+            padding: 5px;
+
+            &:hover {
+                background: transparent;
+            }
+            .home-link {
+                padding: 5px;
+                letter-spacing: 0;
+            }
+        }
+
+        // Tablet portrait and above styling
+        @media @break-tablet-portrait {
+            &.desktop {
+                display: flex;
+                padding: 0;
+            }
+            &.mobile {
+                display: none;
+            }
+            .menu-item {
+                padding: 12px;
+                font-size: 13px;
+            }
+        }
+
+        // Tablet landscape and above styling
+        @media @break-tablet-landscape {
+            .menu-item {
+                padding: 25px;
+                font-size: 16px;
+            }
+        }
+    }
+}

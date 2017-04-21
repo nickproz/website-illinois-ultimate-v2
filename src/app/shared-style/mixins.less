@@ -1,0 +1,15 @@
+// Mixin to vertically center an element
+.vertical-center() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// Mixin to vertically center an element absolutely
+.vertical-center-2() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}

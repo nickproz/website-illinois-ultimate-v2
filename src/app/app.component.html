@@ -1,0 +1,32 @@
+<main class="main-container">
+    <!--Desktop Menu-->
+    <div class="ui borderless desktop menu">
+        <a routerLink="/our-story"       [routerLinkActive]="['active']" class="item menu-item">Our Story</a>
+        <a routerLink="/wedding-party"   [routerLinkActive]="['active']" class="item menu-item">Wedding Party</a>
+        <a routerLink="/ceremony"        [routerLinkActive]="['active']" class="item menu-item">Ceremony</a>
+        <a routerLink="/home"            [routerLinkActive]="['active']" class="item menu-item home-link">Lindsey & Nate's<br>Wedding</a>
+        <a routerLink="/accommodations"  [routerLinkActive]="['active']" class="item menu-item">Accommodations</a>
+        <a routerLink="/registry"        [routerLinkActive]="['active']" class="item menu-item">Registry</a>
+        <a routerLink="/rsvp"            [routerLinkActive]="['active']" class="item menu-item">RSVP</a>
+    </div>
+
+    <!--Mobile Menu-->
+    <div class="ui borderless mobile menu">
+        <div #mobileDropdown class="ui dropdown item">
+            <div class="item menu-item home-link">Lindsey & Nate's<br>Wedding</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a routerLink="/our-story"      class="item menu-item">Our Story</a>
+                <a routerLink="/wedding-party"  class="item menu-item">Wedding Party</a>
+                <a routerLink="/ceremony"       class="item menu-item">Ceremony</a>
+                <a routerLink="/home"           class="item menu-item home-link">Home</a>
+                <a routerLink="/accommodations" class="item menu-item">Accommodations</a>
+                <a routerLink="/registry"       class="item menu-item">Registry</a>
+                <a routerLink="/rsvp"           class="item menu-item">RSVP</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Page Routes-->
+    <router-outlet></router-outlet>
+</main>
