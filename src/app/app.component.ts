@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import './shared-style/styles.css';
 
@@ -8,16 +8,7 @@ import './shared-style/styles.css';
     styleUrls: ['./app.component.less']
 })
 
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements OnInit {
 
-    // Child mobile menu dropdown
-    @ViewChild('mobileDropdown')
-    private mobileDropdownElement: ElementRef;
-
-    /**
-     * Initialize our mobile menu dropdown.
-     */
-    ngAfterViewInit(): void {
-        $(this.mobileDropdownElement.nativeElement).dropdown({});
-    }
+    ngOnInit(): void {}
 }

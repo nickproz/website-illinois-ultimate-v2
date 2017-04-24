@@ -1,0 +1,29 @@
+<div class="header">
+    <a routerLink="/home"><img class="crest" src="../../../public/assets/images/global/crest.png"/></a>
+    <a routerLink="/home"><h1 class="header-text">Illinois Ultimate</h1></a>
+</div>
+
+<div class="ui pointing stackable menu">
+    <a routerLink="/home"       [routerLinkActive]="['active']" class="item active"><i class="home icon"></i>Home</a>
+    <a routerLink="/about"      [routerLinkActive]="['active']" class="item"><i class="info icon"></i>About Us</a>
+    <a routerLink="/prospects"  [routerLinkActive]="['active']" class="item"><i class="child icon"></i>Prospective Players</a>
+    <div #teamDropdown class="ui dropdown item">
+        <i class="user icon"></i>Team<i class="dropdown icon"></i>
+        <div class="menu">
+            <div routerLink="/practice"     [routerLinkActive]="['active']" class="item"><i class="soccer icon"></i>Practice</div>
+            <div routerLink="/tournaments"  [routerLinkActive]="['active']" class="item"><i class="calendar icon"></i>Tournaments</div>
+            <div routerLink="/roster"       [routerLinkActive]="['active']" class="item"><i class="ordered list icon"></i>Roster</div>
+            <div routerLink="/absent"       [routerLinkActive]="['active']" class="item"><i class="remove icon"></i>Absent Form</div>
+        </div>
+    </div>
+    <div #historyDropdown class="ui dropdown item">
+        <i class="fast backward icon"></i>History<i class="dropdown icon"></i>
+        <div class="menu">
+            <div routerLink="/history"  [routerLinkActive]="['active']" class="item"><i class="undo icon"></i>Team History</div>
+            <div routerLink="/awards"   [routerLinkActive]="['active']" class="item"><i class="trophy icon"></i>Awards</div>
+            <div routerLink="/results"  [routerLinkActive]="['active']" class="item"><i class="archive icon"></i>Past Results</div>
+        </div>
+    </div>
+    <a href="http://www.illiniulti.blogspot.com/" target="_blank" class="item"><i class="comment icon"></i>Blog</a>
+    <a routerLink="/contact" [routerLinkActive]="['active']" class="item"><i class="mail icon"></i>Contact Us</a>
+</div>

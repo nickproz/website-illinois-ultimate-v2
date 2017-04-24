@@ -1,44 +1,41 @@
 import { NgModule } from '@angular/core';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { BrowserModule }  from '@angular/platform-browser';
-import { RouterModule } from "@angular/router";
 import { HttpModule } from "@angular/http";
 import { FormsModule } from "@angular/forms";
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
-import { AppComponent } from './app.component';
-import { OurStoryComponent } from "./our-story/our-story.component";
-import { AccommodationsComponent } from "./accomodations/accommodations.component";
-import { RegistryComponent } from "./registry/registry.component";
-import { RsvpComponent } from "./rsvp/rsvp.component";
-import { WeddingPartyComponent } from "./wedding-party/wedding-party.component";
-import { CeremonyComponent } from "./ceremony/ceremony.component";
 import { HomeComponent } from "./home/home.component";
+import { AboutComponent } from "./about/about.component";
+import { ProspectivePlayersComponent } from "./prospective-players/prospective-players.component";
+import { ContactComponent } from "./contact/contact.component";
+import { AppComponent } from './app.component';
 
-import { ROUTES } from "./app.routes";
+import { TeamModule } from "./team/team.module";
+import { HistoryModule } from "./history/history.module";
+import { PageFrameModule } from "./page-frame/page-frame.module";
 
 @NgModule({
     imports: [
         BrowserModule,
-        RouterModule.forRoot(ROUTES),
         HttpModule,
-        FormsModule,
-        AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyBRIXAk5xdvn3ezypsSe55f8dZhcHheAZ8'
-        })
+        // FormsModule,
+        // AgmCoreModule.forRoot({
+        //     apiKey: 'AIzaSyBRIXAk5xdvn3ezypsSe55f8dZhcHheAZ8'
+        // }),
+        PageFrameModule,
+        TeamModule,
+        HistoryModule
     ],
     declarations: [
         AppComponent,
-        OurStoryComponent,
-        WeddingPartyComponent,
-        CeremonyComponent,
         HomeComponent,
-        AccommodationsComponent,
-        RegistryComponent,
-        RsvpComponent
+        AboutComponent,
+        ProspectivePlayersComponent,
+        ContactComponent
     ],
-    // Use hash strategy so page refreshes on github pages route correctly
+    // Use hash strategy so page refreshes on Github pages route correctly
     providers: [ {provide: LocationStrategy, useClass: HashLocationStrategy} ],
     bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {}

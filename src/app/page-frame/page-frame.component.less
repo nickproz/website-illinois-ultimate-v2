@@ -1,0 +1,33 @@
+@import "../shared-style/breakpoints";
+
+.ui.grid {
+  .left-sidebar {
+    padding: 0;
+    min-width: 182px;
+  }
+  .main-content-column {
+    padding: 0 20px;
+  }
+  .right-sidebar {
+    padding: 0;
+  }
+}
+
+// Mobile styling only
+@media @break-mobile-max {
+  .menu-desktop {
+    display: none;
+  }
+  .ui.grid {
+    .left-sidebar, .right-sidebar {
+      display: none;
+    }
+  }
+}
+
+// Table portrait styling and up
+@media @break-tablet-portrait {
+  .menu-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../shared-style/colors";
+@import "../../shared-style/variables";
+@import "../../shared-style/breakpoints";
+
+.header {
+  width: 100%;
+  background-image: url('../../../public/assets/images/global/header-background.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ui.dropdown {
+    text-align: center;
+  }
+  .header-text {
+    font-size: 72px;
+    font-family: @font-family--header;
+    color: @illinois-orange;
+    padding: 10px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  }
+  .dropdown.icon {
+    font-size: 20px;
+    color: white;
+  }
+  .menu {
+    width: 100%;
+  }
+}

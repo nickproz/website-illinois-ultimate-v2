@@ -31,4 +31,4 @@ import '../node_modules/semantic-ui/dist/semantic.js';
 // import '../node_modules/lightbox2/dist/js/lightbox.js'
 
 // Hover
-// import '../node_modules/hover.css/css/hover-min.css';
+import '../node_modules/hover.css/css/hover-min.css';
