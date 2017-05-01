@@ -1,1 +1,21 @@
 <h1 class="ui header">Practice</h1>
+<table class="ui celled table">
+    <thead>
+        <tr>
+            <th>Season</th>
+            <th>What</th>
+            <th>Time</th>
+            <th>When</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let practiceRow of practiceData">
+            <td>{{practiceRow.season}}</td>
+            <td>{{practiceRow.what}}</td>
+            <td>{{practiceRow.time}}</td>
+            <td>{{practiceRow.when}}</td>
+            <td><a href="{{practiceRow.locationLink}}" target="_blank">{{practiceRow.locationLabel}}</a></td>
+        </tr>
+    </tbody>
+</table>

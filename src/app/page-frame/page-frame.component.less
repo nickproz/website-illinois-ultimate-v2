@@ -1,33 +1,61 @@
 @import "../shared-style/breakpoints";
 
-.ui.grid {
-  .left-sidebar {
-    padding: 0;
-    min-width: 182px;
-  }
-  .main-content-column {
-    padding: 0 20px;
-  }
-  .right-sidebar {
-    padding: 0;
-  }
+.menu-desktop, .left-sidebar, .right-sidebar {
+  display: none;
 }
-
-// Mobile styling only
-@media @break-mobile-max {
-  .menu-desktop {
-    display: none;
-  }
-  .ui.grid {
-    .left-sidebar, .right-sidebar {
-      display: none;
-    }
-  }
+.main-container {
+  margin-bottom: 40px;
 }
 
 // Table portrait styling and up
 @media @break-tablet-portrait {
+  .main-container {
+    display: flex;
+  }
   .menu-mobile {
     display: none;
+  }
+  .menu-desktop, .left-sidebar, .right-sidebar {
+    display: block
+  }
+  .main-content {
+    padding: 0 10px;
+    width: 100%;
+  }
+  .left-sidebar {
+    margin-left: 10px;
+    flex: 0 0 200px;
+  }
+  .right-sidebar {
+    margin-right: 10px;
+    margin-left: auto;
+    flex: 0 0 150px;
+  }
+}
+
+// Table landscape styling and up
+@media @break-tablet-landscape {
+  .main-content {
+    padding: 0 30px;
+  }
+  .left-sidebar {
+    margin-left: 50px;
+  }
+  .right-sidebar {
+    margin-right: 50px;
+    flex: 0 0 200px;
+  }
+}
+
+// Desktop styling and up
+@media @break-desktop {
+  .main-content {
+    padding: 0 50px;
+  }
+  .left-sidebar {
+    margin-left: 80px;
+  }
+  .right-sidebar {
+    margin-right: 80px;
   }
 }

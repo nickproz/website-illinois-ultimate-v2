@@ -79,6 +79,12 @@ module.exports = {
         new CopyWebpackPlugin([{
             from: './src/public/assets/images/global/favicon.ico',
             to: 'assets/'
+        }]),
+
+        // Manually copy our roster photos to dist
+        new CopyWebpackPlugin([{
+            from: './src/public/assets/images/team/roster/',
+            to: 'assets/'
         }])
     ]
 };

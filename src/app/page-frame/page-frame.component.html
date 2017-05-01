@@ -3,25 +3,15 @@
 <menu-mobile class="menu-mobile"></menu-mobile>
 
 <!--Content-->
-<div class="ui three column stackable grid">
-    <div class="row">
-        <!--Spacer Column-->
-        <div class="one wide column"></div>
-        <!--Twitter Sidebar-->
-        <div class="three wide column left-sidebar">
-            <left-sidebar></left-sidebar>
-        </div>
-        <!--Main Content-->
-        <div class="eight wide column main-content-column">
-            <div class="ui container">
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-        <!--Paypal Sidebar-->
-        <div class="three wide column right-sidebar">
-            <right-sidebar></right-sidebar>
-        </div>
-        <!--Spacer Column-->
-        <div class="one wide column"></div>
+<div class="main-container">
+    <div class="left-sidebar">
+        <left-sidebar></left-sidebar>
     </div>
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="right-sidebar">
+        <right-sidebar></right-sidebar>
+    </div>
+    <footer></footer>
 </div>

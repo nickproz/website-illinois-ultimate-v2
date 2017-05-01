@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AWARDS_DATA } from "./data/awards.data";
+import { Award } from "./model/award.model";
 
 @Component({
     selector: 'awards',
@@ -8,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class AwardsComponent implements OnInit {
 
-    ngOnInit(): void {
-        console.log('Awards Component!');
-    }
+    // Awards data to inject into our template
+    private awardData: Award[] = AWARDS_DATA;
+
+    ngOnInit(): void {}
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PRACTICE_DATA } from "./data/practice.data";
+import { Practice } from "./model/practice.model";
 
 @Component({
     selector: 'practice',
@@ -8,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class PracticeComponent implements OnInit {
 
-    ngOnInit(): void {
-        console.log('Practice Component!');
-    }
+    // Practice data to inject into our template
+    private practiceData: Practice[] = PRACTICE_DATA;
+
+    ngOnInit(): void {}
 }

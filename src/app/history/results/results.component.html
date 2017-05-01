@@ -1,1 +1,21 @@
 <h1 class="ui header">Results</h1>
+<table class="ui celled table">
+    <thead>
+    <tr>
+        <th>Year</th>
+        <th>Sectionals</th>
+        <th>Regionals</th>
+        <th>Nationals</th>
+        <th>Team Page</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let result of resultData">
+        <td>{{result.year}}</td>
+        <td>{{result.sectionals}}</td>
+        <td>{{result.regionals}}</td>
+        <td>{{result.nationals}}</td>
+        <td><a target="_blank" href="{{result.teamPageLink}}">{{result.teamPageLabel}}</a></td>
+    </tr>
+    </tbody>
+</table>

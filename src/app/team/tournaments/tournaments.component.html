@@ -1,1 +1,30 @@
 <h1 class="ui header">Tournaments</h1>
+<ng-container *ngFor="let tournamentYear of tournamentData">
+    <ng-container *ngIf="tournamentYear.year === year">
+        <div class="ui secondary pointing menu">
+            <a class="item" routerLink="/tournaments/2015" [ngClass]="{'active': year === 2015}">2015</a>
+            <a class="item" routerLink="/tournaments/2016" [ngClass]="{'active': year === 2016}">2016</a>
+            <a class="item" routerLink="/tournaments/2017" [ngClass]="{'active': year === 2017}">2017</a>
+        </div>
+        <table class="ui celled table" *ngIf="tournamentData">
+            <thead>
+                <tr>
+                    <th>Season</th>
+                    <th>Name</th>
+                    <th>When</th>
+                    <th>Location</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let tournament of tournamentYear.tournaments">
+                    <td>{{tournament.season}}</td>
+                    <td><a href="{{tournament.nameLink}}" target="_blank">{{tournament.nameLabel}}</a></td>
+                    <td>{{tournament.when}}</td>
+                    <td>{{tournament.location}}</td>
+                    <td>{{tournament.result}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </ng-container>
+</ng-container>

@@ -8,6 +8,7 @@ import { RightSidebarComponent } from "./right-sidebar/right-sidebar.component";
 import { PageFrameComponent } from "./page-frame.component";
 
 import { ROUTES } from "../app.routes";
+import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { ROUTES } from "../app.routes";
         MenuDesktopComponent,
         MenuMobileComponent,
         LeftSidebarComponent,
-        RightSidebarComponent
+        RightSidebarComponent,
+        FooterComponent
     ],
     exports: [
         PageFrameComponent

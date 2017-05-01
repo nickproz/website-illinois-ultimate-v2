@@ -1,1 +1,60 @@
-<h1 class="ui header">Absent</h1>
+<h1 class="ui header">Practice Absence Form</h1>
+<div *ngIf="formIsSubmitting" class="ui active inverted dimmer"><div class="ui text loader">Submitting</div></div>
+<form class="ui form">
+    <div class="two fields">
+        <div class="field">
+            <label>First Name <span class="required">*</span></label>
+            <input [(ngModel)]="firstName" type="text" name="first-name" placeholder="First Name">
+        </div>
+        <div class="field">
+            <label>Last Name <span class="required">*</span></label>
+            <input [(ngModel)]="lastName" type="text" name="last-name" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="field">
+        <label>Reason for missing or being late to practice <span class="required">*</span></label>
+        <input [(ngModel)]="reason" type="text" name="reason" placeholder="Better be good...">
+    </div>
+    <div class="field">
+        <label>From what time to what time is your conflict? <span class="required">*</span></label>
+        <input [(ngModel)]="time" type="text" name="time" placeholder="Time">
+    </div>
+    <div class="field">
+        <div class="fields">
+            <div class="field">
+                <label class="date-label">Practice date <span class="required">*</span></label>
+                <input [(ngModel)]="day" maxlength="2" type="text" name="day" placeholder="Day (0-31)">
+            </div>
+            <div class="field">
+                <label>&nbsp;</label>
+                <div #monthDropdown class="ui search selection dropdown">
+                    <input #monthInput type="hidden" name="month">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Month</div>
+                    <div class="menu">
+                        <div class="item" data-value="01">January</div>
+                        <div class="item" data-value="02">February</div>
+                        <div class="item" data-value="03">March</div>
+                        <div class="item" data-value="04">April</div>
+                        <div class="item" data-value="05">May</div>
+                        <div class="item" data-value="06">June</div>
+                        <div class="item" data-value="07">July</div>
+                        <div class="item" data-value="08">August</div>
+                        <div class="item" data-value="09">September</div>
+                        <div class="item" data-value="10">October</div>
+                        <div class="item" data-value="11">November</div>
+                        <div class="item" data-value="12">December</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button (click)="handleSubmit($event, monthInput.value)" class="ui button" type="submit">Submit</button>
+    <div class="ui error message" *ngIf="formErrors">
+        <p>{{formErrors}}</p>
+    </div>
+    <div class="ui success message" *ngIf="submitSuccess">
+        <div class="header">Form Submitted</div>
+        <p>The form was successfully submitted. Stop missing practice.</p>
+    </div>
+</form>

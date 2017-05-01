@@ -1,1 +1,22 @@
 <h1 class="ui header">Awards</h1>
+<table class="ui celled table">
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Name</th>
+            <th>Award</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let award of awardData">
+            <td>{{award.year}}</td>
+            <td>{{award.name}}</td>
+            <td>{{award.award}}</td>
+        </tr>
+    </tbody>
+</table>
+<p>*All-Freshman team added in 2013, FOTY given to the All-Freshman member with the most 1st place votes</p>
+<p>*Player of the year award added in 2013, POTY given to the All-Region member with the most 1st place votes</p>
+<p>*Coach of the Year added in 2009</p>
+<p>*2nd-Team All Region added in 2009</p>
+<p>*Awards first given out in 2002</p>
