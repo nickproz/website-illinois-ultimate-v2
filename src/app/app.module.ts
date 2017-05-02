@@ -19,7 +19,7 @@ import { PageFrameModule } from "./page-frame/page-frame.module";
     imports: [
         BrowserModule,
         HttpModule,
-        // FormsModule,
+        FormsModule,
         // AgmCoreModule.forRoot({
         //     apiKey: 'AIzaSyBRIXAk5xdvn3ezypsSe55f8dZhcHheAZ8'
         // }),

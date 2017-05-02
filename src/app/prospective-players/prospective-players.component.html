@@ -7,40 +7,63 @@
         <div class="two fields">
             <div class="field">
                 <label>First Name <span class="required">*</span></label>
-                <input type="text" name="first-name" placeholder="First Name">
+                <input [(ngModel)]="firstName" type="text" name="first-name" placeholder="First Name">
             </div>
             <div class="field">
                 <label>Last Name <span class="required">*</span></label>
-                <input type="text" name="last-name" placeholder="Last Name">
+                <input [(ngModel)]="lastName" type="text" name="last-name" placeholder="Last Name">
             </div>
         </div>
         <div class="two fields">
             <div class="field">
                 <label>Email Address <span class="required">*</span></label>
-                <input type="text" name="last-name" placeholder="Email Address">
+                <input [(ngModel)]="emailAddress" type="text" name="email-address" placeholder="Email Address">
             </div>
             <div class="field">
                 <label>What is your Hometown? <span class="required">*</span></label>
-                <input type="text" name="home-town" placeholder="Hometown">
+                <input [(ngModel)]="hometown" type="text" name="home-town" placeholder="Hometown">
             </div>
         </div>
         <div class="two fields">
             <div class="field">
                 <label>What high school did you attend? <span class="required">*</span></label>
-                <input type="text" name="highschool" placeholder="Highschool">
+                <input [(ngModel)]="highschool" type="text" name="highschool" placeholder="Highschool">
             </div>
             <div class="field">
                 <label>What major are you planning on going into? <span class="required">*</span></label>
-                <input type="text" name="major" placeholder="Major">
+                <input [(ngModel)]="major" type="text" name="major" placeholder="Major">
             </div>
         </div>
         <div class="field">
             <label>How long have you played ultimate/what kind of experience do you have? <span class="required">*</span></label>
-            <input type="text" name="experience" placeholder="Experience">
+            <textarea [(ngModel)]="experience" name="experience" rows="2"></textarea>
         </div>
         <div class="field">
             <label>What other clubs/organizations are you planning on joining when you arrive on campus? <span class="required">*</span></label>
-            <input type="text" name="other-clubs" placeholder="Other Clubs">
+            <textarea [(ngModel)]="otherClubs" name="other-clubs" rows="2"></textarea>
         </div>
-    <button class="ui button" type="submit">Submit</button>
+        <div class="inline fields">
+            <label>Would you be alright with a captain or coach reaching out to you? <span class="required">*</span></label>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input id="contact-yes" [(ngModel)]="contact" type="radio" name="contact" value="Yes" checked="checked" tabindex="0" class="hidden">
+                    <label for="contact-yes">Yes</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input id="contact-no" [(ngModel)]="contact" type="radio" name="contact" value="No" tabindex="0" class="hidden">
+                    <label for="contact-no">No</label>
+                </div>
+            </div>
+        </div>
+    <button (click)="handleSubmit($event)" class="ui button" type="submit">Submit</button>
+    <div class="ui error message" *ngIf="formErrors">
+        <p>{{formErrors}}</p>
+    </div>
+    <div class="ui success message" *ngIf="submitSuccess">
+        <div class="header">Form Submitted</div>
+        <p>The form was successfully submitted! Thanks for taking the time to fill it out.</p>
+    </div>
+    <div *ngIf="formIsSubmitting" class="ui active inverted dimmer"><div class="ui text loader">Submitting</div></div>
 </form>

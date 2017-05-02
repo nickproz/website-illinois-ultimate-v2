@@ -114,18 +114,11 @@ export class AbsentComponent implements AfterViewInit {
      */
     private formIsValid(): boolean {
 
-        console.log(this.firstName);
-        console.log(this.lastName);
-        console.log(this.reason);
-        console.log(this.time);
-        console.log(this.day);
-        console.log(this.month);
-
-        return this.firstName != null && this.firstName != ''
-            && this.lastName != null && this.lastName != ''
-            && this.reason != null && this.reason != ''
-            && this.time != null && this.time != ''
-            && this.month != null && this.month > 0
+        return this.firstName != null   && this.firstName != ''
+            && this.lastName != null    && this.lastName != ''
+            && this.reason != null      && this.reason != ''
+            && this.time != null        && this.time != ''
+            && this.month != null       && this.month > 0
             && this.day != null;
     }
 }
