@@ -1,11 +1,12 @@
 @import "../../shared-style/colors";
+@import "../../shared-style/variables";
 
 img {
   width: 75%;
   border: 1px solid @illinois-blue;
   margin-bottom: 15px;
+  border-radius: @border-radius--semantic-segment;
 }
-
 i {
   font-size: 2em;
 
@@ -19,4 +20,10 @@ i {
 .summary {
   text-align: left;
   margin-bottom: 20px;
+}
+.item.active {
+  border: 0 !important;
+}
+.ui.dropdown.item {
+  height: 40px;
 }

@@ -1,11 +1,11 @@
 <h1 class="ui header">Roster</h1>
+<div class="ui secondary pointing menu">
+    <a class="item" routerLink="/roster/2015" [ngClass]="{'active': year === 2015}">2015</a>
+    <a class="item" routerLink="/roster/2016" [ngClass]="{'active': year === 2016}">2016</a>
+    <a class="item" routerLink="/roster/2017" [ngClass]="{'active': year === 2017}">2017</a>
+</div>
 <ng-container *ngFor="let rosterYear of rosterData">
     <ng-container *ngIf="rosterYear.year === year">
-        <div class="ui secondary pointing menu">
-            <a class="item" routerLink="/roster/2015" [ngClass]="{'active': year === 2015}">2015</a>
-            <a class="item" routerLink="/roster/2016" [ngClass]="{'active': year === 2016}">2016</a>
-            <a class="item" routerLink="/roster/2017" [ngClass]="{'active': year === 2017}">2017</a>
-        </div>
         <img src="{{rosterYear.imagePath}}"/>
         <table class="ui celled table">
             <thead>

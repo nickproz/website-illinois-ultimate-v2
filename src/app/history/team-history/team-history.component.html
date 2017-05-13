@@ -1,8 +1,44 @@
 <h1 class="ui header">Team History</h1>
 <div class="ui secondary pointing menu">
-    <a class="item" routerLink="/history/2015" [ngClass]="{'active': year === 2015}">2015</a>
-    <a class="item" routerLink="/history/2016" [ngClass]="{'active': year === 2016}">2016</a>
-    <a class="item" routerLink="/history/2017" [ngClass]="{'active': year === 2017}">2017</a>
+    <div #1994dropdown class="ui dropdown item">
+        1994-1999<i class="dropdown icon"></i>
+        <div class="menu">
+            <div routerLink="/history/1994" [routerLinkActive]="['active']" class="item">1994</div>
+            <div routerLink="/history/1995" [routerLinkActive]="['active']" class="item">1995</div>
+            <div routerLink="/history/1996" [routerLinkActive]="['active']" class="item">1996</div>
+            <div routerLink="/history/1997" [routerLinkActive]="['active']" class="item">1997</div>
+            <div routerLink="/history/1998" [routerLinkActive]="['active']" class="item">1998</div>
+            <div routerLink="/history/1999" [routerLinkActive]="['active']" class="item">1999</div>
+        </div>
+    </div>
+    <div #2000dropdown class="ui dropdown item">
+        2000-2009<i class="dropdown icon"></i>
+        <div class="menu">
+            <div routerLink="/history/2001" [routerLinkActive]="['active']" class="item">2001</div>
+            <div routerLink="/history/2002" [routerLinkActive]="['active']" class="item">2002</div>
+            <div routerLink="/history/2003" [routerLinkActive]="['active']" class="item">2003</div>
+            <div routerLink="/history/2004" [routerLinkActive]="['active']" class="item">2004</div>
+            <div routerLink="/history/2005" [routerLinkActive]="['active']" class="item">2005</div>
+            <div routerLink="/history/2006" [routerLinkActive]="['active']" class="item">2006</div>
+            <div routerLink="/history/2007" [routerLinkActive]="['active']" class="item">2007</div>
+            <div routerLink="/history/2008" [routerLinkActive]="['active']" class="item">2008</div>
+            <div routerLink="/history/2009" [routerLinkActive]="['active']" class="item">2009</div>
+        </div>
+    </div>
+    <div #2010dropdown class="ui dropdown item">
+        2010-2017<i class="dropdown icon"></i>
+        <div class="menu">
+            <div routerLink="/history/2010" [routerLinkActive]="['active']" class="item">2010</div>
+            <div routerLink="/history/2011" [routerLinkActive]="['active']" class="item">2011</div>
+            <div routerLink="/history/2012" [routerLinkActive]="['active']" class="item">2012</div>
+            <div routerLink="/history/2013" [routerLinkActive]="['active']" class="item">2013</div>
+            <div routerLink="/history/2014" [routerLinkActive]="['active']" class="item">2014</div>
+            <div routerLink="/history/2015" [routerLinkActive]="['active']" class="item">2015</div>
+            <div routerLink="/history/2016" [routerLinkActive]="['active']" class="item">2016</div>
+            <div routerLink="/history/2017" [routerLinkActive]="['active']" class="item">2017</div>
+
+        </div>
+    </div>
 </div>
 <h2 class="ui header">{{year}}</h2>
 <ng-container *ngFor="let historyYear of historyData">
@@ -11,5 +47,6 @@
         <div class="summary" [innerHTML]="historyYear.summaryMarkup"></div>
     </ng-container>
 </ng-container>
+<!--Only show the previous and next button if they are within the bounds of our history summaries-->
 <a *ngIf="year > 1994" routerLink="/history/{{year - 1}}"><i class="angle double left icon"></i></a>
-<a *ngIf="year < 2016" routerLink="/history/{{year + 1}}"><i class="angle double right icon"></i></a>
+<a *ngIf="year < 2017" routerLink="/history/{{year + 1}}"><i class="angle double right icon"></i></a>

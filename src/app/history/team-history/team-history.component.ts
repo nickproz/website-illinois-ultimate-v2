@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 import { HistoryYear } from "./model/history-year.model";
 import { HISTORY_DATA } from "./data/history-year.data";
@@ -10,7 +10,7 @@ import { ActivatedRoute } from "@angular/router";
     styleUrls: ['./team-history.component.less']
 })
 
-export class TeamHistoryComponent implements OnInit {
+export class TeamHistoryComponent implements OnInit, AfterViewInit {
 
     // Results data to inject into our template
     private historyData: HistoryYear[] = HISTORY_DATA;
@@ -19,8 +19,22 @@ export class TeamHistoryComponent implements OnInit {
     // Current tournament year
     private year: number;
 
+    // Year dropdowns
+    @ViewChild('1994dropdown')
+    private firstDropdown: ElementRef;
+    @ViewChild('2000dropdown')
+    private secondDropdown: ElementRef;
+    @ViewChild('2010dropdown')
+    private thirdDropdown: ElementRef;
+
     // Inject the ActivatedRoute into our component
     constructor(private route: ActivatedRoute) {}
+
+    ngAfterViewInit() {
+        $(this.firstDropdown.nativeElement).dropdown({});
+        $(this.secondDropdown.nativeElement).dropdown({});
+        $(this.thirdDropdown.nativeElement).dropdown({});
+    }
 
     /**
      * Subscribe to our route parameters (tournament year).

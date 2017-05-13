@@ -1,3 +1,4 @@
+/* General Elements */
 body {
     background-image: url('../../public/assets/images/global/background.jpg');
     font-family: 'Quattrocento', serif;
@@ -6,15 +7,14 @@ body {
 }
 p {
     text-indent: 25px;
-    padding: 10px;
+    padding: 5px;
 }
 a {
-    color: #00004D;
-}
-a:hover {
     color: #ff6226;
 }
-
+a:hover {
+    color: #00004D;
+}
 input {
     font-family: 'Quattrocento', serif !important;
 }
@@ -22,26 +22,34 @@ input {
 input:focus {
      border-color: #ff6226 !important;
 }
+
+/* Headers */
+.ui.header {
+    font-family: 'Oswald', sans-serif;
+    color: #00004D;
+    letter-spacing: 1px;
+    /*text-transform: uppercase;*/
+}
+
+/* Tables */
+.ui.table tr, .ui.table td {
+    text-align: center;
+    border-top: 0;
+}
+
+/* Secondary Menus */
+.ui.secondary.pointing.menu {
+    justify-content: center;
+}
+.ui.secondary.pointing.menu .item.active {
+    border-color: #00004D;
+}
+
+/* Random */
 .button {
     background-color: #ff6226 !important;
     color: white !important;
 }
 .required {
     color: #ff6226;
-}
-
-.ui.header {
-    font-family: 'Oswald', sans-serif;
-    color: #00004D;
-    letter-spacing: 1px;
-}
-.ui.table tr, .ui.table td {
-    text-align: center;
-    border-top: 0;
-}
-.ui.secondary.pointing.menu {
-    justify-content: center;
-}
-.ui.secondary.pointing.menu .item.active {
-    border-color: #00004D;
 }

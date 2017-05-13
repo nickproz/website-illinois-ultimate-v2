@@ -1,6 +1,8 @@
 @import "../../shared-style/colors";
 @import "../../shared-style/variables";
 
+@padding--donate-text: 15px;
+
 .paypal-sidebar {
   max-width: 200px;
   margin-left: auto;
@@ -9,6 +11,8 @@
   p {
     text-indent: 0;
     margin-bottom: 0;
+    padding-top: @padding--donate-text;
+    padding-bottom: @padding--donate-text;
   }
 }
 .paypal-donate {
@@ -24,4 +28,5 @@
   margin: 3px;
   border: 1px solid @illinois-blue;
   box-shadow: @box-shadow--semantic-segment;
+  border-radius: @border-radius--semantic-segment;
 }
