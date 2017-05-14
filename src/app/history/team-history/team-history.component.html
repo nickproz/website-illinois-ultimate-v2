@@ -43,7 +43,7 @@
 <h2 class="ui header">{{year}}</h2>
 <ng-container *ngFor="let historyYear of historyData">
     <ng-container *ngIf="historyYear.year === year">
-        <img src="{{historyYear.imagePath}}"/>
+        <img *ngIf="historyYear.imagePath" src="{{historyYear.imagePath}}"/>
         <div class="summary" [innerHTML]="historyYear.summaryMarkup"></div>
     </ng-container>
 </ng-container>
