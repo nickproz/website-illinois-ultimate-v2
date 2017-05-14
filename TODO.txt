@@ -1,2 +1,3 @@
 - Date picker for absent form
 - LESS values into variables
+- Google Analytics

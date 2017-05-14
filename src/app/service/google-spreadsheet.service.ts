@@ -27,7 +27,8 @@ export class SpreadsheetService {
             .post(apiUrl, data, {headers: this.headers})
             .toPromise()
             .then(response => response.json())
-            .catch(() => this.postRowToSpreadsheetBackup(backupApiUrl, data));
+            .catch(SpreadsheetService.handleError);
+            // .catch(() => this.postRowToSpreadsheetBackup(backupApiUrl, data));
     }
 
     /**
