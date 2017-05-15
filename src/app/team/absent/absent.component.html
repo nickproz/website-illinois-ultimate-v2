@@ -1,5 +1,8 @@
+<!--Header-->
 <h1 class="ui header">Practice Absence Form</h1>
+<!--Submitting Loader-->
 <div *ngIf="formIsSubmitting" class="ui active inverted dimmer"><div class="ui text loader">Submitting</div></div>
+<!--Form-->
 <form class="ui form">
     <div class="two fields">
         <div class="field">
@@ -50,6 +53,7 @@
         </div>
     </div>
     <button (click)="handleSubmit($event, monthInput.value)" class="ui button" type="submit">Submit</button>
+    <!--Error/Success Messages-->
     <div class="ui error message" *ngIf="formErrors">
         <p>{{formErrors}}</p>
     </div>

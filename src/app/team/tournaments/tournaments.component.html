@@ -1,4 +1,6 @@
+<!--Header-->
 <h1 class="ui header">Tournaments</h1>
+<!--Menu-->
 <div class="ui secondary pointing menu">
     <a class="item" routerLink="/tournaments/2013" [ngClass]="{'active': year === 2013}">2013</a>
     <a class="item" routerLink="/tournaments/2014" [ngClass]="{'active': year === 2014}">2014</a>
@@ -6,6 +8,7 @@
     <a class="item" routerLink="/tournaments/2016" [ngClass]="{'active': year === 2016}">2016</a>
     <a class="item" routerLink="/tournaments/2017" [ngClass]="{'active': year === 2017}">2017</a>
 </div>
+<!--Table-->
 <ng-container *ngFor="let tournamentYear of tournamentData">
     <ng-container *ngIf="tournamentYear.year === year">
         <table class="ui celled table" *ngIf="tournamentData">
