@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Angular2/Webpack dependencies",
   "scripts": {
-    "start": "npm run git-publish",
-    "start-dev": "npm run build && webpack-dev-server --inline --hot --progress --port 3000",
+    "start": "npm run build && webpack-dev-server --inline --hot --progress --port 3000",
     "build:prod": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "build": "rimraf dist && webpack",
     "git-add": "git add .",
