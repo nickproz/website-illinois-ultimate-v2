@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Angular2/Webpack dependencies",
   "scripts": {
-    "start": "npm run git-publish",
-    "start-dev": "npm run build && webpack-dev-server --inline --hot --progress --port 3000",
+    "start": "npm run build && webpack-dev-server --inline --hot --progress --port 3000",
     "build:prod": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "build": "rimraf dist && webpack",
     "git-add": "git add .",
@@ -45,7 +44,6 @@
     "css-to-string-loader": "^0.1.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
-    "git": "^0.1.5",
     "gulp": "^3.9.1",
     "gulp-webserver": "^0.9.1",
     "html-loader": "^0.4.3",
