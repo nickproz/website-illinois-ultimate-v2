@@ -81,6 +81,12 @@ module.exports = {
             to: 'assets/'
         }]),
 
+        // Manually copy our CNAME file to dist for domain mapping
+        new CopyWebpackPlugin([{
+            from: './CNAME',
+            to: './'
+        }]),
+
         // Manually copy our roster photos to dist
         new CopyWebpackPlugin([{
             from: './src/public/assets/images/team/roster/',

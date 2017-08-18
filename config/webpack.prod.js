@@ -17,7 +17,7 @@ module.exports = webpackMerge(commonConfig, {
 
         // Comment this out to host locally vs hosting on github pages
         // publicPath: "/github-pages-path/",
-        publicPath: "/website-illinois-ultimate-v2/",
+        // publicPath: "/website-illinois-ultimate-v2/",
 
         filename: '[name].[hash].js',
         chunkFilename: '[id].[hash].chunk.js'

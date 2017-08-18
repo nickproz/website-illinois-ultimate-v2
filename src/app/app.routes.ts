@@ -13,7 +13,8 @@ import { AwardsComponent } from "./history/awards/awards.component";
 import { ResultsComponent } from "./history/results/results.component";
 
 export const ROUTES: Routes = [
-    {path: '',                  component: HomeComponent},
+    {path: '',                  redirectTo:'home',   pathMatch: 'full'},
+    {path: 'home',              component: HomeComponent},
     {path: 'practice',          component: PracticeComponent},
     {path: 'absent',            component: AbsentComponent},
     {path: 'contact',           component: ContactComponent},
