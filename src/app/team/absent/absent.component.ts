@@ -21,6 +21,10 @@ export class AbsentComponent implements AfterViewInit {
     private validationErrors: string = 'Please do not leave any required fields blank.';
     private submissionError: string = 'Could not submit the form  due to a server error. Please try again soon or contact the web admins.';
 
+    // GTM variables
+    private static gtmEventName: string = 'Absent Form Submit';
+    private static gtmVariableName: string = 'absent-form';
+
     // First name input
     private firstName: string;
     // Last name input
@@ -84,7 +88,7 @@ export class AbsentComponent implements AfterViewInit {
     private submitAbsentForm(data: any): void {
 
         // Push our form data to the data layer for Google Tag Manager to consume
-        GtmUtil.pushObjectToDataLayer('Absent Form Submit', 'absent-form', data);
+        GtmUtil.pushObjectToDataLayer(AbsentComponent.gtmEventName, AbsentComponent.gtmVariableName, data);
 
         this.spreadsheetService.postRowToSpreadsheet(this.googleSheetsApiUrl, this.googleSheetsBackupApiUrl, data)
             .then(() => {

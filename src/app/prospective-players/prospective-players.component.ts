@@ -21,6 +21,10 @@ export class ProspectivePlayersComponent implements OnInit {
     private validationErrors: string = 'Please do not leave any required fields blank.';
     private submissionError: string = 'Could not submit the form  due to a server error. Please try again soon or contact the web admins.';
 
+    // GTM variables
+    private static gtmEventName: string = 'Prospect Form Submit';
+    private static gtmVariableName: string = 'prospect-form';
+
     // First name input
     private firstName: string;
     // Last name input
@@ -87,7 +91,7 @@ export class ProspectivePlayersComponent implements OnInit {
     private submitPlayerForm(data: any): void {
 
         // Push our form data to the data layer for Google Tag Manager to consume
-        GtmUtil.pushObjectToDataLayer('Prospect Form Submit', 'prospect-form', data);
+        GtmUtil.pushObjectToDataLayer(ProspectivePlayersComponent.gtmEventName, ProspectivePlayersComponent.gtmVariableName, data);
 
         this.spreadsheetService.postRowToSpreadsheet(this.googleSheetsApiUrl, this.googleSheetsBackupApiUrl, data)
             .then(() => {
