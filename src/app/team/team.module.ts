@@ -9,7 +9,7 @@ import { RosterComponent } from "./roster/roster.component";
 import { AbsentComponent } from "./absent/absent.component";
 import { RouterModule } from "@angular/router";
 import { ROUTES } from "../app.routes";
-import { SpreadsheetService } from "../service/google-spreadsheet.service";
+import { SpreadsheetService } from "../global/service/google-spreadsheet.service";
 
 @NgModule({
     imports: [

@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <button (click)="handleSubmit($event, monthInput.value)" class="ui button" type="submit">Submit</button>
+    <button (click)="handleSubmit($event, monthInput.value)" class="ui button absent-submit-button" type="submit">Submit</button>
     <!--Error/Success Messages-->
     <div class="ui error message" *ngIf="formErrors">
         <p>{{formErrors}}</p>

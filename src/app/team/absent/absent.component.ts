@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
-import { SpreadsheetService } from "../../service/google-spreadsheet.service";
+import { SpreadsheetService } from "../../global/service/google-spreadsheet.service";
+import { GtmUtil } from "../../global/util/gtm.util";
 
 @Component({
     selector: 'absent',
@@ -81,6 +82,10 @@ export class AbsentComponent implements AfterViewInit {
      * @param data - data to submit to our spreadsheet
      */
     private submitAbsentForm(data: any): void {
+
+        // Push our form data to the data layer for Google Tag Manager to consume
+        GtmUtil.pushObjectToDataLayer('Absent Form Submit', 'absent-form', data);
+
         this.spreadsheetService.postRowToSpreadsheet(this.googleSheetsApiUrl, this.googleSheetsBackupApiUrl, data)
             .then(() => {
                 this.resetForm();

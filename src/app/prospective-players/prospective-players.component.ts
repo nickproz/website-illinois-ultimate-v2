@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { SpreadsheetService } from "../service/google-spreadsheet.service";
+import { SpreadsheetService } from "../global/service/google-spreadsheet.service";
+import { GtmUtil } from "../global/util/gtm.util";
 
 @Component({
     selector: 'prospective-players',
@@ -72,18 +73,22 @@ export class ProspectivePlayersComponent implements OnInit {
                 "Other Clubs": this.otherClubs,
                 "Contact Me": this.contact
             };
-            this.submitAbsentForm(data);
+            this.submitPlayerForm(data);
         }
     }
 
     /**
      * Submits our form to the spreadsheet by calling our service method.
-     * On success, we show our confirmation modal and reset our rsvp modal.
+     * On success, we show our success message.
      * On failure, we hide our submitting dialog and show our submission error to the user.
      *
      * @param data - data to submit to our spreadsheet
      */
-    private submitAbsentForm(data: any): void {
+    private submitPlayerForm(data: any): void {
+
+        // Push our form data to the data layer for Google Tag Manager to consume
+        GtmUtil.pushObjectToDataLayer('Prospect Form Submit', 'prospect-form', data);
+
         this.spreadsheetService.postRowToSpreadsheet(this.googleSheetsApiUrl, this.googleSheetsBackupApiUrl, data)
             .then(() => {
                 this.resetForm();

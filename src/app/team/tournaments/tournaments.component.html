@@ -26,7 +26,7 @@
                     <td>{{tournament.season}}</td>
                     <td>
                         <!--Only render a link if there is one provided in the data, otherwise just render the text-->
-                        <a *ngIf="tournament.nameLink" href="{{tournament.nameLink}}" target="_blank">{{tournament.nameLabel}}</a>
+                        <a class="tournament-info-link" *ngIf="tournament.nameLink" href="{{tournament.nameLink}}" target="_blank">{{tournament.nameLabel}}</a>
                         <ng-container *ngIf="!tournament.nameLink">{{tournament.nameLabel}}</ng-container>
                     </td>
                     <td>{{tournament.when}}</td>
