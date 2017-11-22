@@ -41,18 +41,17 @@ module.exports = {
                 loader: 'file?name=assets/[name].[ext]'
             },
             // LESS
-            // Webpack processes from right to left ('less-loader' first, then 'raw-loader', etc.)
+            // Webpack processes from right to left
             // Exclamation marks are chaining/piping (again, from right to left)
             {
                 test: /\.less$/,
-                loaders: ['css-to-string-loader','css-loader','less-loader']
+                loaders: ['css-to-string-loader', 'css-loader', 'postcss-loader', 'less-loader']
             },
             // CSS
-            // Webpack process from right to left ('css-loader' first, then 'style-loader')
             {
                 test: /\.css$/,
                 // exclude: helpers.root('src', 'app'),
-                loaders: ['style-loader', 'css-loader']
+                loaders: ['style-loader', 'css-loader', 'postcss-loader']
             }
         ]
     },

@@ -13,7 +13,7 @@ a {
     color: #ff6226;
 }
 a:hover {
-    color: #00004D;
+    color: #00004d;
 }
 input {
     font-family: 'Quattrocento', serif !important;
@@ -26,13 +26,15 @@ input:focus {
 /* Headers */
 .ui.header {
     font-family: 'Oswald', sans-serif;
-    color: #00004D;
+    color: #00004d;
     letter-spacing: 1px;
-    /*text-transform: uppercase;*/
+
+    /* text-transform: uppercase; */
 }
 
 /* Tables */
-.ui.table tr, .ui.table td {
+.ui.table tr,
+.ui.table td {
     text-align: center;
     border-top: 0;
 }
@@ -42,7 +44,7 @@ input:focus {
     justify-content: center;
 }
 .ui.secondary.pointing.menu .item.active {
-    border-color: #00004D;
+    border-color: #00004d;
 }
 
 /* Random */
