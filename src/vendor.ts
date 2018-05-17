@@ -18,8 +18,8 @@ import 'jquery';
 import '../node_modules/jquery/dist/jquery.js';
 
 // Semantic
-import '../node_modules/semantic-ui/dist/semantic.css'
-import '../node_modules/semantic-ui/dist/semantic.js';
+import '../node_modules/semantic-ui/dist/semantic.min.css'
+import '../node_modules/semantic-ui/dist/semantic.min.js';
 
 // Slick
 // import '../node_modules/slick-carousel/slick/slick.css';

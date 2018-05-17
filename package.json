@@ -6,12 +6,7 @@
     "start": "npm run build && webpack-dev-server --inline --hot --progress",
     "build:prod": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "build": "rimraf dist && webpack",
-    "git-add": "git add .",
-    "git-commit": "npm run git-add; git commit -m 'commit from gulp plugin'",
-    "git-push": "npm run git-commit; git push",
-    "git-deploy": "npm run git-push; git subtree push --prefix dist origin gh-pages",
-    "git-publish": "npm run build:prod; npm run git-deploy",
-    "git-delete-pages": "git push origin :gh-pages"
+    "git-publish": "npm run build:prod; gh-pages -d dist"
   },
   "license": "MIT",
   "dependencies": {
@@ -29,14 +24,14 @@
     "jquery": "3.1.1",
     "lightbox2": "^2.9.0",
     "rxjs": "5.0.0-beta.12",
-    "semantic-ui": "^2.2.9",
+    "semantic-ui": "2.2.10",
     "zone.js": "^0.6.25"
   },
   "devDependencies": {
     "@types/es6-shim": "0.31.32",
-    "@types/jquery": "^2.0.34",
+    "@types/jquery": "2.0.45",
     "@types/node": "0.0.1",
-    "@types/semantic-ui": "^2.2.1",
+    "@types/semantic-ui": "2.2.3",
     "angular2-template-loader": "^0.4.0",
     "awesome-typescript-loader": "^2.2.4",
     "copy-webpack-plugin": "^4.0.1",
@@ -45,6 +40,7 @@
     "cssnano": "^3.10.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "gh-pages": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-webserver": "^0.9.1",
     "html-loader": "^0.4.3",
