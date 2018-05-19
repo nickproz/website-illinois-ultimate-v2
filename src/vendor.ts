@@ -27,8 +27,8 @@ import '../node_modules/semantic-ui/dist/semantic.min.js';
 // import '../node_modules/slick-carousel/slick/slick.js';
 
 // Lightbox2
-// import '../node_modules/lightbox2/dist/css/lightbox.css';
-// import '../node_modules/lightbox2/dist/js/lightbox.js'
+// import '../node_modules/lightbox2/dist/css/lightbox.min.css';
+// import '../node_modules/lightbox2/dist/js/lightbox.min.js'
 
 // Hover
 import '../node_modules/hover.css/css/hover-min.css';
