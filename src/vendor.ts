@@ -15,7 +15,7 @@ import 'rxjs';
 
 // jQuery
 import 'jquery';
-import '../node_modules/jquery/dist/jquery.js';
+import '../node_modules/jquery/dist/jquery.min.js';
 
 // Semantic
 import '../node_modules/semantic-ui/dist/semantic.min.css'
