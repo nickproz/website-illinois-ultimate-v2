@@ -20,7 +20,7 @@ input {
 }
 
 input:focus {
-     border-color: #ff6226 !important;
+    border-color: #ff6226 !important;
 }
 
 /* Headers */

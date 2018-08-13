@@ -1,4 +1,4 @@
-import { RosterYear } from "../model/roster-year.model";
+import { RosterYear } from '../model/roster-year.model';
 
 export const ROSTER_DATA: RosterYear[] = [
     {

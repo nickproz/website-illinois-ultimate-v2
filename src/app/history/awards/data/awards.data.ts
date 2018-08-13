@@ -1,6 +1,6 @@
-import { Award } from "../model/award.model";
+import { Award } from '../model/award.model';
 
-export const AWARDS_DATA: Award [] = [
+export const AWARDS_DATA: Award[] = [
     {
         year: 2016,
         name: 'Nick Prozorovsky',

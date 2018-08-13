@@ -1,14 +1,13 @@
-import { Injectable } from "@angular/core";
-import { Headers, Http } from "@angular/http";
+import { Injectable } from '@angular/core';
+import { Headers, Http } from '@angular/http';
 
 /**
  * Service to interact with our Google spreadsheet.
  */
 @Injectable()
 export class SpreadsheetService {
-
     // HTTP headers
-    private headers = new Headers({'Content-Type': 'application/json'});
+    private headers = new Headers({ 'Content-Type': 'application/json' });
 
     // Constructor with our http service injected
     constructor(private http: Http) {}
@@ -24,11 +23,11 @@ export class SpreadsheetService {
      */
     public postRowToSpreadsheet(apiUrl: string, backupApiUrl: string, data: Object): Promise<JSON> {
         return this.http
-            .post(apiUrl, data, {headers: this.headers})
+            .post(apiUrl, data, { headers: this.headers })
             .toPromise()
-            .then(response => response.json())
+            .then((response) => response.json())
             .catch(SpreadsheetService.handleError);
-            // .catch(() => this.postRowToSpreadsheetBackup(backupApiUrl, data));
+        // .catch(() => this.postRowToSpreadsheetBackup(backupApiUrl, data));
     }
 
     /**
@@ -42,9 +41,9 @@ export class SpreadsheetService {
      */
     public postRowToSpreadsheetBackup(backupApiUrl: string, data: Object): Promise<JSON> {
         return this.http
-            .post(backupApiUrl, data, {headers: this.headers})
+            .post(backupApiUrl, data, { headers: this.headers })
             .toPromise()
-            .then(response => response.json())
+            .then((response) => response.json())
             .catch(SpreadsheetService.handleError);
     }
 

@@ -1,7 +1,7 @@
-import { RosterPlayer } from "./roster-player.model";
+import { RosterPlayer } from './roster-player.model';
 
 export interface RosterYear {
-    year: number,
-    imagePath: string,
-    players: RosterPlayer[]
+    year: number;
+    imagePath: string;
+    players: RosterPlayer[];
 }

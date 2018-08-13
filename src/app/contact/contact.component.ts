@@ -5,8 +5,6 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.less']
 })
-
 export class ContactComponent implements OnInit {
-
     ngOnInit(): void {}
 }

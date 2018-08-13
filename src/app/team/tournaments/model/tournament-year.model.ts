@@ -1,6 +1,6 @@
-import { Tournament } from "./tournament.model";
+import { Tournament } from './tournament.model';
 
 export interface TournamentYear {
-    year: number,
-    tournaments: Tournament[]
+    year: number;
+    tournaments: Tournament[];
 }

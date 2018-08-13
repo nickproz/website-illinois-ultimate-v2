@@ -1,4 +1,4 @@
-import { Result } from "../model/result.model";
+import { Result } from '../model/result.model';
 
 export const RESULTS_DATA: Result[] = [
     {

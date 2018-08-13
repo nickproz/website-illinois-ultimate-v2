@@ -1,0 +1,9 @@
+# Assets
+src/public/assets
+
+# HTML
+*.html
+
+# DS Store
+src/public/.DS_Store
+src/.DS_Store

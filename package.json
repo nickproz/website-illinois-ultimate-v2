@@ -6,7 +6,8 @@
     "start": "npm run build && webpack-dev-server --inline --hot --progress",
     "build:prod": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "build": "rimraf dist && webpack",
-    "git-publish": "npm run build:prod; gh-pages -d dist"
+    "git-publish": "npm run build:prod; gh-pages -d dist",
+    "pretty": "prettier --print-width 150 --tab-width 4 --arrow-parens always --single-quote --write \"src/**\""
   },
   "license": "MIT",
   "dependencies": {
@@ -46,6 +47,7 @@
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
     "postcss-loader": "^2.0.8",
+    "prettier": "^1.14.2",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.2",
     "style-loader": "^0.13.1",

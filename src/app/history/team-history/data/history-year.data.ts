@@ -1,4 +1,4 @@
-import { HistoryYear } from "../model/history-year.model";
+import { HistoryYear } from '../model/history-year.model';
 
 export const HISTORY_DATA: HistoryYear[] = [
     {
@@ -69,7 +69,8 @@ export const HISTORY_DATA: HistoryYear[] = [
             <p>Not surprisingly, three of the final four teams were from Pool C, and the championship saw UNC match up against Oregon. UNC would win again, blowing out Oregon 15-6. In the end, it was actually Illinois who had put the most points up on the eventual champions, with 12 points. Nick Prozorovsky finished pool play tied for the lead in goals scored at 24. Most importantly, Illinois broke seed, gaining the respect deserved and achieving their goals. The 13 seniors leaving were sent home happy.</p>
             <p>Matt West and Nick Prozorovsky won 1st team all region honors. Kevin Lin won Freshman of the Region. The Matt Stupca deservedly won Coach of the year.</p>
         `
-    },{
+    },
+    {
         year: 2014,
         imagePath: './assets/team-photo-2014.jpg',
         summaryMarkup: `
@@ -78,7 +79,8 @@ export const HISTORY_DATA: HistoryYear[] = [
             <p>The spring schedule was a weak one compared to years' past. The team only attended two tournaments, Huck Finn and Easterns. The team was able to easily win Kat Fight which further boosted the team's ego. At Easterns they fell short in Pool play losing to Pitt, Florida State, Luther, and Central Florida. But won 13th place with wins against Massachusetts and Luther.</p>
             <p>Illinois was able to comfortable win the Illinois Conference Championships with a win in the finals over Northwestern. The Great Lakes earned two bids to nationals thanks to Northwestern and Michigan. Illinois won their pool and set themselves up for a shot at Nationals. Northwestern learned from their Conference loss and was able to adapt to slow down the Illinois offense forcing Illinois to fight through the backdoor. They next played Chicago in a windy game in which both teams attempted to score with 50/50 shots. These conditions stopped Illinois' high speed offense and gave Chicago a chance to have many opportunities on defense. Chicago finally finished the game with a stall 9 jump ball in the endzone finishing Illinois' season.</p>
         `
-    },{
+    },
+    {
         year: 2013,
         imagePath: './assets/team-photo-2013.jpg',
         summaryMarkup: `
@@ -91,7 +93,8 @@ export const HISTORY_DATA: HistoryYear[] = [
             <p>Sunday morning, Illinois came out very hot and played extremely well in a good win over up and coming Northwestern. In the first half of the Regional semi-final against MSU, Illinois could not continue their good play. The Oline struggled mightily with execution errors from the younger players on the line. The first half score was 5-8 MSU. Early in the second half, this worrying trend continued and the score went to 6-10 MSU. When things were looking dire, the soon to be graduating players refused to go down without a fight. Big plays from Preston Goulson and Tyler Anderson fueled a furious Illinois comeback highlighted by a big sky from Brian Rathunde. Illinois pulled out a stunning 14-11 win over MSU. This set up the classic Great Lake Regionals matchup between Illinois and Michigan. For the first time since 2008, this matchup would be for the Regional title and the sole bid to Nationals. Illinois maintained a very slim lead throughout the game. The Oline played very calmly even with increased pressure from Michigan. Late in the game, Illinois pulled out a couple breaks and ended the game on a d and subsequent score by Jon McKoy. Illinois returned to Nationals as the sole representative of the Great Lakes. Ryan Smith won Player of the Region honors, Neal Phelps, Nathan Gibbons earned First Team All-Region awards, Brad Bolliger earned a Second Team and Nick Prozorovsky, Johnny Saniat and Derek Yan earned Freshman team awards.</p>    
             <p>Unfortunately at Nationals, Illinois could not break the 17th place curse. Some key players were unable to play. Illinois gamely tried to fight on but just could not overcome their depleted personnel. In a unsurprising turn of events, Illinois finished 17th at Nationals.</p>    
         `
-    },{
+    },
+    {
         year: 2012,
         imagePath: './assets/team-photo-2012.jpg',
         summaryMarkup: `
@@ -104,7 +107,8 @@ export const HISTORY_DATA: HistoryYear[] = [
             <p>With their backs against the wall, Illinois regrouped and took care of business on Saturday and stayed alive in the 2nd place bracket for Sunday. For the first time since 2007, Illinois was not in the Regional Final Sunday morning but instead in a fight for their season in the backdoor semi- finals. They dispatched Indiana 15-7 and had a rematch with Eastern Illinois in the backdoor final. Illinois did not take them lightly this time and came out with a rarely seen intensity and beat Eastern 15-2. However, the team's focus and execution was not there and multiple turnovers on every point culminated in the destruction of Coach Walden Nelson's clipboard. Illinois, after an arduous road, had finally made it to a game to go to Nationals against Michigan State. Illinois started the game out strong and fired up and came out with two quick breaks. MSU played a lot of zone in an effort to negate Ryan Smith's hucks. But Ryan did not take the bait and lead the offense to a clean no break first half and the defense got 3 breaks for an 8-5 halftime lead. Illinois smelled a Nationals berth and came out of half with 2 more points for a commanding 10-5 lead. This was when Michigan State held their ground and began a tenacious comeback. Staying with their zone, MSU began to force more and more turnovers from Illinois and began to convert them for breaks. A 10-5 lead quickly became 10-8 and MSU clawed slowly back from there to finally take the lead at 13-12. A lot of credit is to be given to MSU for never giving up and fighting their way back to the lead. But Illinois' lack of composure on offense coupled with a willingness to turn the disc over, as well as timeout mismanagement by Coach Walden Nelson did not help the cause. Even with all that being said, Illinois scored on offense to make it 13- 13 universe point with the winner going to Nationals. Illinois got the disc twice on universe and both times threw passes into the endzone that hit a receiver's hands, but alas both passes were dropped. After the second drop in the endzone MSU picked up the disc and immediately threw an 80 yard, more than full field huck for the game and the Nationals berth.</p>    
             <p>This was not the ending to the 2012 season that Illinois imagined. For the first time since 2007, Illinois' graduating seniors did not get to end their careers at Nationals. With a huge graduating class, it will be up to the few returning A-teamers to pick up the pieces and return Illinois to Nationals.</p>    
         `
-    },{
+    },
+    {
         year: 2011,
         imagePath: './assets/team-photo-2011.jpg',
         summaryMarkup: `
@@ -115,7 +119,8 @@ export const HISTORY_DATA: HistoryYear[] = [
             <p>Just like 2010, Illinois had the 3rd seed going into Regionals. Unlike past years only 1 team would make it to Nationals, meaning 1 bad half and the season would be over. Another change was the format, with the format being pool play instead of a straight bracket. In a very windy Saturday, Illinois gutted out a close game against Loyola, winning on double game point. After that scare woke them up, they beat Western Michigan and Notre Dame handily. Everyone on the team was looking forward to facing Michigan in semis but first they would have to get through Indiana in the first game of the day on Sunday. Led by their senior leaders Ed Wu and Taylor Kraemer, Indiana gave Illinois all they could handle in a close back and forth game before Illinois pulled it out winning 15-13. This led to the semifinal showdown with Michigan for the third year in a row. However, this year would be different from the past two years as Illinois came out firing with an intensity that Michigan either could not or was unwilling to match. It was a total team effort as everyone contributed to a resounding 15-9 win. It was a great win, but people were too satisfied with that victory considering that the bid to Nationals was still up for grabs. Illinois still had to face a determined opponent in Michigan State who undoubtedly had plans for revenge from 2010. Fortunately for Illinois, Michigan State had several unforced errors in the first half of the game and Illinois took advantage going up several breaks in the first half. Michigan State tried to mount a comeback in the second half but the score difference was too great. Illinois won the region for the 3rd year in a row and took the regions only bid to Nationals with a 15-11 victory. Illinois had several players who played well during Regionals including but not limited to Dane Jorgensen, Brian Pierce, Austin Lien, Zachary Frantz, Ryan Smith and Neal Phelps. In a surprising turn of events, only Ryan Smith was a member of the All-Region team.</p>
             <p>Going into Nationals, Illinois planned on breaking the curse of two straight 17th places. Ironically enough and deservedly so, Illinois had the 17th seed going in. Illinois was in a pool with overall #1 seed Pittsburgh and #12 seed and fan favorite Colorado College. In the first game of Nationals against Colorado College, Illinois battled nerves and had several unforced errors in the first half. However, led by Neal Phelps' stellar defense on Callahan candidate Nicky Spiva and Dane Jorgensen's aerial ability, Illinois fought and clawed back for a gritty 13-11 victory. This was Illinois' first Nationals pool play victory in 2 years and had them primed to take a spot in prequarters. After losing 15-10 to Pittsburgh highlighted by a break with several Nationals first timers and both rookies, Illinois only needed to win 1 of their next 2 games to take a spot in prequarters. Unfortunately, the issues that beguiled Illinois throughout the season came up once again. To put it simply, Illinois did not show up on Saturday of Nationals. Illinois looked lifeless and lost to Iowa 15-10. Even with that being said, Illinois simply had to win against Tufts to advance to the bracket. With their season on the line, Illinois gave a sad, disappointing effort both on the field and on the sidelines. Their effort was no where close to good enough and they got punished deservedly, 15-7, knocking them into the placement bracket for the 3rd year in a row. Illinois lost to Whitman 16-14 after leading most of the game and then in the game they have never lost, beat Florida and took 17th place for the 3rd year in a row. However there is hope for the future with 20 returning players and a talented incoming class, Illinois will look to break the curse of 17th.</p>
         `
-    },{
+    },
+    {
         year: 2010,
         imagePath: './assets/team-photo-2010.jpg',
         summaryMarkup: `
@@ -125,7 +130,8 @@ export const HISTORY_DATA: HistoryYear[] = [
             <p>Going into Regionals Illinois had the 3 seed going in behind Michigan State and Michigan. Illinois beat both Dayton and Purdue handily and advanced to semifinals before finding out that Regionals would be postponed for a week. Having a week to prepare and to heal, Illinois faced Michigan at Regionals as is the norm. In a heavy wind game, which saw several lead changes, but few breaks, and lots of great plays from both teams, Illinois was able to score on a gut-wrenching universe point and won the game 9-8.</p>
             <p>This sent Illinois to its 3rd straight Regional final with a chance to repeat as Regional champions for the first time in the programs history. Illinois faced Michigan State with the Regional title on the line and prevailed in a close game with Illinois being able to pull away in the end, 15-10. Illinois repeated as Regional champions for the first time and had Brian Phelan and Walden Nelson win first team All-Region honors and had Ryan Smith win 2nd team All-Region, becoming the first sophomore in the programs history to win a regional award. Illinois was seeded 14th going into Nationals. They lost to Harvard handily but was still in contention for a prequarters berth if they were able to beat both UNCW and Iowa. However, in games possibly showing a lack of experience or the burden of captaining and coaching proving too great, Illinois lost late leads in both games and lost to UNCW 14-12 and to Iowa 16-14. Illinois then played Carleton in a much closer than expected 15-12 loss and lost to Wisconsin. Beating Kansas in the last game of the tournament gave Illinois its only win at Nationals and sent them home with another 17th place finish. Illinois did not graduate as many players as in years past, which makes Illinois in a prime position to continue its Nationals qualifying streak.</p>
         `
-    },{
+    },
+    {
         year: 2009,
         imagePath: './assets/team-photo-2009.jpg',
         summaryMarkup: `
@@ -134,7 +140,8 @@ export const HISTORY_DATA: HistoryYear[] = [
             <p>Illinois faced tougher than expected games against Kenyon and North Park before meeting Michigan in Regional semifinals. Illinois came together in a way that had not been seen all season, and put forth their best effort of the season and beat Michigan in a tense hard fought game 12-9. This put Illinois in its second straight Regional final against Ohio State. The previous day's momentum carried over as Illinois beat Ohio State handily 15-11, taking home its first Regional championship since 2002.</p>
             <p>Illinois placed Denis Agniel, Brian Phelan, Pavan Sarguru, and Walden Nelson on the Great Lakes 2nd Team All-Region, Coach Matt Stupca won the inaugural Coach of the Region award, and Ryan Smith won Freshman of the year. Winning the Region gave Illinois an 8 seed going into Nationals, however whatever magic Illinois had at Regionals was lost at Nationals, as Illinois lost several games by big margins except for one close pool play game against Tufts and the only win against Cal. They did so in good spirit, winning the 2009 Nationals Spirit Award and dubbed Zubair: The most spirited man in ultimate. Although, this performance gave Illinois a disappointing 17th place finish at Nationals and with several players graduating including captain Denis Agniel, the prospect of another rebuilding year loomed large.</p>
         `
-    },{
+    },
+    {
         year: 2008,
         imagePath: './assets/team-photo-2008.jpg',
         summaryMarkup: `
@@ -142,7 +149,8 @@ export const HISTORY_DATA: HistoryYear[] = [
             <p>Throughout the season, Illinois had a chance to win every game that they played. The biggest margin of victory in Illinois' losses heading into Regionals was 3 points. Illinois suffered some key injuries before Sectionals but managed to persevere and hold of North Park in an exciting 17-16 Sectional Final. Like the previous year Illinois had a 2 seed going into Regionals. They took care of business on Saturday winning all 3 games and securing a spot in the Regional finals. In many people's first Regional final, Illinois played tentatively and lost 15-11 to Michigan putting them in the 2nd place game against Ohio State. In a reversal of the previous years game at Regionals, Illinois stormed out to a big lead and maintained it throughout and punched their first ticket to Nationals in 3 years.</p>    
             <p>Pat Stephens and Joel Koehneman both won all-region honors. Nationals that year was in Boulder, Colorado and Illinois went into it holding an 8 seed and in a pool with Florida, North Texas and Delaware. Illinois beat Delaware to clinch a spot in prequarters, and lost to Florida and North Texas. In prequarters Illinois was matched up against Michigan, who they had lost to at Regionals and had not beaten since 2004. In a hard fought game led by the graduating players, Illinois prevailed 15-11 sending them into quarters against the hometown team Colorado. In an exciting game that saw several big plays, Illinois lost 15-12 to Colorado and ended their season having them tied for 5th which is the highest finish in the programs history. 2008 saw the departure of many mainstays for Illinois and the following years would show how well the recruiting efforts of 2005 paid off.</p>      
         `
-    },{
+    },
+    {
         year: 2007,
         imagePath: '',
         summaryMarkup: `
@@ -151,79 +159,92 @@ export const HISTORY_DATA: HistoryYear[] = [
             <p>Illinois steamrolled through Sectionals and reclaimed the Sectionals crown and had a 2-seed going into Regionals. Regionals was held in Rantoul, Illinois and was hosted by Illinois. Illinois took care of business early, beating Dayton and Notre Dame handily before squaring off against Indiana in Regional semifinals. In a very heavy upwind downwind game that saw very few breaks, Illinois received going downwind on universe point but was unable to punch it in and lost on a couple floaty upwind hucks. Out of the running for first, Illinois was now in the backdoor bracket having to win every game in order to advance to Nationals. They beat Northwestern and faced Ohio State, the #1 seed going into the tournament who had also lost in semis to Michigan. Perhaps showing a little bit of inexperience in a pressure filled game, Illinois went down big early, going down 5-0, however, they mounted a furious comeback and came close to negating the early deficit, but eventually succumbed 15-12 and ending their season without a Nationals berth for the 3rd year in a row. Illinois finished 4th at Regionals.</p>    
             <p>Brian Korbesmeyer and Joel Koehneman both received all-region honors. However unlike the previous year, there were several graduating players most notably Brian Korbesmeyer, who had captained the team the previous 2 years and was a major player on offense. Finding players to step into the holes left by the graduating players was a major question going into the next year.</p>    
         `
-    },{
+    },
+    {
         year: 2006,
         imagePath: '',
         summaryMarkup: `
             <p>After coming so close to a Nationals berth the year before, 2006 was a rebuilding year for Illinois. After losing several starting players, the captains, Brian Korbesmeyer and Joel Koehneman and coach Matt Stupca, decided to focus their energies on recruiting and replenishing the program. This led to one of the deepest freshman classes in the programs history largely due to the efforts of Brian Korbesmeyer. In order to facilitate the rebuilding process, the leadership decided to go with a very small A-team roster of less than 20 guys, so that everyone would be able to play both on the A-team and on the B-team. The B-team with the services of coach Nick McDuffee was able to nurture the players and have them ready to take the next step onto the A-team. It was a season with very few bright spots, as Illinois did not make the Sectional final for one of the few times in modern history, finishing 4th at Sectionals, and did not even make Sunday of Regionals, finishing tied for 7th after losing in quarterfinals and getting eliminated in the backdoor bracket. However, there were encouraging signs for future years to come, Brian Phelan won freshman of the year for the Great Lakes Region and there were several talented players waiting in the wings, ready to make their mark on the program and the same core of players returning.</p>    
         `
-    },{
+    },
+    {
         year: 2005,
         imagePath: '',
         summaryMarkup: `
             <p>Illinois advanced to the finals at Regionals and lost to Michigan on double game point, and had to immediately play Michigan State for second place and the chance to return to nationals. Coming out flat after the loss to Michigan Illinois went down 3-0. Battled back to double game point but again lost and were eliminated.</p>
         `
-    },{
+    },
+    {
         year: 2004,
         imagePath: '',
         summaryMarkup: `
             <p>Illinois finished second at Regionals and advanced to Nationals in Seattle, Washington. Illinois lost a close game to North Carolina State in Prequarters and finished 9th.</p>
         `
-    },{
+    },
+    {
         year: 2003,
         imagePath: '',
         summaryMarkup: `
             <p>Illinois started being invited to the major tournaments, including its first invite to Easterns. This helped prepare the team for the season. Seeded first at Regionals, Illinois lost in the finals to Ohio State and advanced to Nationals in Austin, TX. After beating Michigan and Georgia fairly handily in the first two games, Illinois beat North Carolina State 17-15 to win the pool. In quarters Illinois matched up with Colorado.They were 3 feet away from being up 14-13, pulling downwind, but victory eluded them, and ended up finishing tied for 5th.</p>
         `
-    },{
+    },
+    {
         year: 2002,
         imagePath: '',
         summaryMarkup: `
             <p>The program made a big jump forward under the coaching of Joe Ferrari. The team advanced to the Regional Final for the first time ever, the Final was against Michigan. There was a consistent wind of 25-35 mph with gusts of over 40. For a lot of the game it was upwind/downwind with the huck and zone strategy being employed. Then early in the second half we got a big break off and were able to work the disc up the backhand sideline all the way to the endzone for a score to take the lead. From there we maintained our lead up to 13-12. Michigan worked the disc upwind and called a timeout 5 yards out of the endzone on the forehand side. Out of the timeout they had a man break open on the force side. Alvin Wang was able to run past for the game saving d. We were able to score that point and the next downwinder in the back corner of the endzone to advance to our first Nationals. Illinois' first Nationals tournament was in Spokane, WA. We lost many close games early to Colorado and Carleton. We beat Colorado later in the tournament and finished 9th.</p>
         `
-    },{
+    },
+    {
         year: 2001,
         imagePath: '',
         summaryMarkup: `
             <p>Bill Finn and Nick McDuffee joined the team this year, and the team was the strongest it had ever been with these two outstanding rookies. Many of the older returners now had 3-4 years of competitive ultimate under their belts, and the team was on the verge of breaking through. A Sectional final win over Indiana set up Illinois as the 3rd seed at Regionals behind Michigan and OSU (regional hosts). After beating a tough ND team in quarterfinals, Illinois faced Michigan in the semifinals. Despite being up by a few goals at half-time, Michigan's Nationals experience showed and they ended up winning a closely fought game. Sunday morning, Illinois lost to Oberlin, making it three straight years of semifinal losses at Regionals.</p>
         `
-    },{
+    },
+    {
         year: 2000,
         imagePath: '',
         summaryMarkup: `
             <p>Illinois changed its name to FIST and had another good recruiting class with the likes of Greg Severin, Chris Hagen, Nels Overgaard-Cook, Kyle Eertmoed, Brian Fifarek, and Dave Draeger. Illinois went to the Stanford Invite for the first time. Regionals was at Purdue University that year, and Illinois lost to Dayton in semifinals, beat Oberlin Sunday morning, and then lost an elimination game to Notre Dame.</p>
         `
-    },{
+    },
+    {
         year: 1999,
         imagePath: '',
         summaryMarkup: `
             <p>1999 saw another surge in the team's development. More recruits like Alvin Wang, John Koltse, and Kevin Patterson joined the team. The College Regions were redrawn which meant that Illinois had a real opportunity to qualify for nationals in the newly formed Great Lakes Region. It was a great year for the team, which racked up many wins, including wins at Frozen Over in Bloomington, IN and the first Sectional Championship for the team. Coming into Regionals, Illinois was seeded second and hosted the tournament. The team lost a heartbreaker in semifinals to Oberlin College, and then lost an elimination game on Sunday morning to Notre Dame.</p>
         `
-    },{
+    },
+    {
         year: 1998,
         imagePath: '',
         summaryMarkup: `
             <p>Was a transformational year for the program, as a great class of rookies joined Illinois. Jarrett Bialek, Xia Xi, Andy Zill, Kyle Romberg, and Jacob Dee were among the new players who helped push the team to towards becoming a more legitimate program. The team changed their name to 'Men From Mars', got uniforms, designed new discs, and actually started practicing a real offensive scheme and spent more time working out off the field. Illinois set the goal of qualifying for Regionals, and at that time the Central Region included every state from Minnesota to Illinois to Colorado. A 4th place finish at sectionals propelled them to their first Regionals birth in many years. At Regionals in Michigan, Illinois played Grinnell and Colorado State pool play, but were eliminated from competition on Saturday.</p>
         `
-    },{
+    },
+    {
         year: 1997,
         imagePath: '',
         summaryMarkup: `
             <p>Tom Coffin aka Iron Man, an older player deserves credit for organizing the program and recruiting efforts. He moved to Champaign in the fall of 1996 and really helped lead the program in the right direction along with players like Joe Ferrari and Ryan Fehrenbacher and others. In the fall of 1996, the team was mostly filled with graduate students and older players, and had a 'serious' pick-up vibe where practices were mostly scrimmages with some occasional drills. Under Captain Ted Winrow, 'Big Red Ultimate' struggled to win many games, but traveled to tournaments in Baton Rouge, LA, Carbondale, IL, Madison, WI, amongst a few others. Key players included John Conour, Leo Wang, Jon Rasmussen, and David Fiske. Joe Ferrari and Matt Taylor were the only freshmen, who showed up consistently, and the year ended with a low finish at Sectionals and Illinois did not qualify for Regionals that year. BRU - the origin of this name comes from the practice on the team where if you got handblocked you had to chug a bottle of Big Red Soda, which had some significance.</p>
         `
-    },{
+    },
+    {
         year: 1996,
         imagePath: '',
         summaryMarkup: `
             <p>Illinois again hosted Sectionals and qualified for Regionals, finishing 3rd behind Notre Dame and Indiana. Our team by this point was more than half undergraduates; there were at most 14 at Regionals. The team was run at this time by Ted Winrow. Ted and Gary Ledonne were basically the entire team. Bill Branson was still playing, John Connour was in his first year, Leo Wang was in his first year alSophomore Gary Ledonne had to convince players to attend Regionals in West Lafayette. Illinois went 0-3 in pool play losing relatively close games to Colorado and Oberlin.</p>
         `
-    },{
+    },
+    {
         year: 1995,
         imagePath: '',
         summaryMarkup: `
             <p>After losing 2 of our top grad students Illinois lost in the game to go to Regionals to Ball State.</p>
         `
-    },{
+    },
+    {
         year: 1994,
         imagePath: '',
         summaryMarkup: `

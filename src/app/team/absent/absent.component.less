@@ -1,24 +1,27 @@
-@import "../../shared-style/colors";
-@import "../../shared-style/variables";
+@import '../../shared-style/colors';
+@import '../../shared-style/variables';
 
 label {
-  text-align: left;
+    text-align: left;
 }
 .ui.form {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 
-  .ui.error.message, .ui.success.message {
-    display: block;
+    .ui.error.message,
+    .ui.success.message {
+        display: block;
 
-    p {
-      text-align: center;
+        p {
+            text-align: center;
+        }
     }
-  }
 }
-.ui.selection.active.dropdown .menu, .ui.search.selection.dropdown.active.visible, .ui.selection.active.dropdown:hover {
-  border-color: @illinois-orange;
+.ui.selection.active.dropdown .menu,
+.ui.search.selection.dropdown.active.visible,
+.ui.selection.active.dropdown:hover {
+    border-color: @illinois-orange;
 }
 .ui.dropdown {
-  min-width: inherit;
+    min-width: inherit;
 }

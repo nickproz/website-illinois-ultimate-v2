@@ -2,7 +2,6 @@
  * Util for interacting with Google Tag Manager (GTM).
  */
 export class GtmUtil {
-
     /**
      * Pushes custom GTM data to the data layer.
      *
@@ -15,6 +14,6 @@ export class GtmUtil {
         (<any>window).dataLayer = (<any>window).dataLayer || [];
 
         // Push our GTM object with the event data passed in
-        (<any>window).dataLayer.push({'event': eventName, [variableName]: JSON.stringify(data)});
+        (<any>window).dataLayer.push({ event: eventName, [variableName]: JSON.stringify(data) });
     }
 }

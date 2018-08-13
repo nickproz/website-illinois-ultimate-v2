@@ -5,9 +5,7 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
     templateUrl: './menu-mobile.component.html',
     styleUrls: ['./menu-mobile.component.less']
 })
-
 export class MenuMobileComponent implements AfterViewInit {
-
     // Menu dropdowns
     @ViewChild('teamDropdown')
     private teamDropdown: ElementRef;

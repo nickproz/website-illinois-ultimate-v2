@@ -5,9 +5,7 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
     templateUrl: './menu-desktop.component.html',
     styleUrls: ['./menu-desktop.component.less']
 })
-
 export class MenuDesktopComponent implements AfterViewInit {
-
     // Menu dropdowns
     @ViewChild('teamDropdown')
     private teamDropdown: ElementRef;

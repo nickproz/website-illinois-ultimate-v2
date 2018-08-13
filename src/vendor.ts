@@ -18,7 +18,7 @@ import 'jquery';
 import '../node_modules/jquery/dist/jquery.min.js';
 
 // Semantic
-import '../node_modules/semantic-ui/dist/semantic.min.css'
+import '../node_modules/semantic-ui/dist/semantic.min.css';
 import '../node_modules/semantic-ui/dist/semantic.min.js';
 
 // Slick

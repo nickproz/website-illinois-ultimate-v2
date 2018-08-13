@@ -1,17 +1,15 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
-import { HistoryYear } from "./model/history-year.model";
-import { HISTORY_DATA } from "./data/history-year.data";
-import { ActivatedRoute } from "@angular/router";
+import { HistoryYear } from './model/history-year.model';
+import { HISTORY_DATA } from './data/history-year.data';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'team-history',
     templateUrl: './team-history.component.html',
     styleUrls: ['./team-history.component.less']
 })
-
 export class TeamHistoryComponent implements OnInit, AfterViewInit {
-
     // Results data to inject into our template
     private historyData: HistoryYear[] = HISTORY_DATA;
     // Subscription to our route parameters (tournament year)
@@ -40,7 +38,7 @@ export class TeamHistoryComponent implements OnInit, AfterViewInit {
      * Subscribe to our route parameters (tournament year).
      */
     ngOnInit() {
-        this.routeParamsSubscription = this.route.params.subscribe(params => {
+        this.routeParamsSubscription = this.route.params.subscribe((params) => {
             // (+) converts string 'year' to a number
             this.year = +params['year'];
         });

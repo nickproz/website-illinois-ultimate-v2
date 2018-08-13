@@ -1,5 +1,5 @@
 export interface Award {
-    year: number,
-    name: string,
-    award: string
+    year: number;
+    name: string;
+    award: string;
 }

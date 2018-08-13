@@ -1,5 +1,5 @@
 export interface RosterPlayer {
-    number: number,
-    name: string,
-    year: string
+    number: number;
+    name: string;
+    year: string;
 }

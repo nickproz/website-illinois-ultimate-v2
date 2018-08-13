@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
-import { SpreadsheetService } from "../global/service/google-spreadsheet.service";
-import { GtmUtil } from "../global/util/gtm.util";
+import { SpreadsheetService } from '../global/service/google-spreadsheet.service';
+import { GtmUtil } from '../global/util/gtm.util';
 
 @Component({
     selector: 'prospective-players',
     templateUrl: './prospective-players.component.html',
     styleUrls: ['./prospective-players.component.less']
 })
-
 export class ProspectivePlayersComponent implements OnInit {
-
     // API url for our personal server
     private googleSheetsApiUrl = 'https://nick-proz-google-sheet-api.herokuapp.com/sheets/11ijrHoysiIwsFfEggbSNM9Y8VvzU65jeuhQ3vkV5FGw/sheetIndex/2/rows/';
     // API url for our backup server (sheetsu API)
@@ -59,23 +57,23 @@ export class ProspectivePlayersComponent implements OnInit {
         event.preventDefault();
         this.submitSuccess = false;
 
-        if(!this.formIsValid()) {
+        if (!this.formIsValid()) {
             this.formErrors = this.validationErrors;
         } else {
             this.formIsSubmitting = true;
             this.formErrors = null;
             let date = new Date();
             let data = {
-                "Timestamp": date.toLocaleString(),
-                "First Name": this.firstName,
-                "Last Name": this.lastName,
-                "Email Address": this.emailAddress,
-                "Hometown": this.hometown,
-                "Highschool": this.highschool,
-                "Major": this.major,
-                "Experience": this.experience,
-                "Other Clubs": this.otherClubs,
-                "Contact Me": this.contact
+                Timestamp: date.toLocaleString(),
+                'First Name': this.firstName,
+                'Last Name': this.lastName,
+                'Email Address': this.emailAddress,
+                Hometown: this.hometown,
+                Highschool: this.highschool,
+                Major: this.major,
+                Experience: this.experience,
+                'Other Clubs': this.otherClubs,
+                'Contact Me': this.contact
             };
             this.submitPlayerForm(data);
         }
@@ -89,11 +87,11 @@ export class ProspectivePlayersComponent implements OnInit {
      * @param data - data to submit to our spreadsheet
      */
     private submitPlayerForm(data: any): void {
-
         // Push our form data to the data layer for Google Tag Manager to consume
         GtmUtil.pushObjectToDataLayer(ProspectivePlayersComponent.gtmEventName, ProspectivePlayersComponent.gtmVariableName, data);
 
-        this.spreadsheetService.postRowToSpreadsheet(this.googleSheetsApiUrl, this.googleSheetsBackupApiUrl, data)
+        this.spreadsheetService
+            .postRowToSpreadsheet(this.googleSheetsApiUrl, this.googleSheetsBackupApiUrl, data)
             .then(() => {
                 this.resetForm();
                 this.submitSuccess = true;
@@ -101,7 +99,7 @@ export class ProspectivePlayersComponent implements OnInit {
             .catch(() => {
                 this.formIsSubmitting = false;
                 this.formErrors = this.submissionError;
-            })
+            });
     }
 
     /**
@@ -127,16 +125,25 @@ export class ProspectivePlayersComponent implements OnInit {
      * @returns {boolean} - true if the form is valid, false otherwise
      */
     private formIsValid(): boolean {
-
-        return this.firstName != null       && this.firstName != ''
-            && this.lastName != null        && this.lastName != ''
-            && this.emailAddress != null    && this.emailAddress != ''
-            && this.hometown != null        && this.hometown != ''
-            && this.highschool != null      && this.highschool != ''
-            && this.major != null           && this.major != ''
-            && this.experience != null      && this.experience != ''
-            && this.otherClubs != null      && this.otherClubs != ''
-            && this.contact != null         && this.contact != '';
-
+        return (
+            this.firstName != null &&
+            this.firstName != '' &&
+            this.lastName != null &&
+            this.lastName != '' &&
+            this.emailAddress != null &&
+            this.emailAddress != '' &&
+            this.hometown != null &&
+            this.hometown != '' &&
+            this.highschool != null &&
+            this.highschool != '' &&
+            this.major != null &&
+            this.major != '' &&
+            this.experience != null &&
+            this.experience != '' &&
+            this.otherClubs != null &&
+            this.otherClubs != '' &&
+            this.contact != null &&
+            this.contact != ''
+        );
     }
 }

@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { TOURNAMENTS_DATA } from "./data/tournaments.data";
-import { TournamentYear } from "./model/tournament-year.model";
+import { TOURNAMENTS_DATA } from './data/tournaments.data';
+import { TournamentYear } from './model/tournament-year.model';
 
 @Component({
     selector: 'tournaments',
     templateUrl: './tournaments.component.html',
     styleUrls: ['./tournaments.component.less']
 })
-
 export class TournamentsComponent implements OnInit {
-
     // Tournament data to inject into our template
     private tournamentData: TournamentYear[] = TOURNAMENTS_DATA;
     // Subscription to our route parameters (tournament year)
@@ -26,7 +24,7 @@ export class TournamentsComponent implements OnInit {
      * Subscribe to our route parameters (tournament year).
      */
     ngOnInit() {
-        this.routeParamsSubscription = this.route.params.subscribe(params => {
+        this.routeParamsSubscription = this.route.params.subscribe((params) => {
             // (+) converts string 'year' to a number
             this.year = +params['year'];
         });

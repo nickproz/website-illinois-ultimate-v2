@@ -1,18 +1,17 @@
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
-import { SpreadsheetService } from "../../global/service/google-spreadsheet.service";
-import { GtmUtil } from "../../global/util/gtm.util";
+import { SpreadsheetService } from '../../global/service/google-spreadsheet.service';
+import { GtmUtil } from '../../global/util/gtm.util';
 
 @Component({
     selector: 'absent',
     templateUrl: './absent.component.html',
     styleUrls: ['./absent.component.less']
 })
-
 export class AbsentComponent implements AfterViewInit {
-
     // API url for our personal server
-    private googleSheetsApiUrl = 'https://nick-proz-google-sheet-api.herokuapp.com/sheets/11ijrHoysiIwsFfEggbSNM9Y8VvzU65jeuhQ3vkV5FGw/sheetIndex/1/rows/';
+    private googleSheetsApiUrl =
+        'https://nick-proz-google-sheet-api.herokuapp.com/sheets/11ijrHoysiIwsFfEggbSNM9Y8VvzU65jeuhQ3vkV5FGw/sheetIndex/1/rows/';
     // API url for our backup server (sheetsu API)
     // private googleSheetsBackupApiUrl = 'https://sheetsu.com/apis/v1.0/7a030ae60b7d';
     private googleSheetsBackupApiUrl = '';
@@ -60,19 +59,19 @@ export class AbsentComponent implements AfterViewInit {
         this.month = monthInput;
         this.submitSuccess = false;
 
-        if(!this.formIsValid()) {
+        if (!this.formIsValid()) {
             this.formErrors = this.validationErrors;
         } else {
             this.formIsSubmitting = true;
             this.formErrors = null;
             let date = new Date();
             let data = {
-                "Timestamp": date.toLocaleString(),
-                "First Name": this.firstName,
-                "Last Name": this.lastName,
-                "Time": this.time,
-                "Date": `${this.month}/${this.day}`,
-                "Reason": this.reason
+                Timestamp: date.toLocaleString(),
+                'First Name': this.firstName,
+                'Last Name': this.lastName,
+                Time: this.time,
+                Date: `${this.month}/${this.day}`,
+                Reason: this.reason
             };
             this.submitAbsentForm(data);
         }
@@ -86,11 +85,11 @@ export class AbsentComponent implements AfterViewInit {
      * @param data - data to submit to our spreadsheet
      */
     private submitAbsentForm(data: any): void {
-
         // Push our form data to the data layer for Google Tag Manager to consume
         GtmUtil.pushObjectToDataLayer(AbsentComponent.gtmEventName, AbsentComponent.gtmVariableName, data);
 
-        this.spreadsheetService.postRowToSpreadsheet(this.googleSheetsApiUrl, this.googleSheetsBackupApiUrl, data)
+        this.spreadsheetService
+            .postRowToSpreadsheet(this.googleSheetsApiUrl, this.googleSheetsBackupApiUrl, data)
             .then(() => {
                 this.resetForm();
                 this.submitSuccess = true;
@@ -98,7 +97,7 @@ export class AbsentComponent implements AfterViewInit {
             .catch(() => {
                 this.formIsSubmitting = false;
                 this.formErrors = this.submissionError;
-            })
+            });
     }
 
     /**
@@ -122,12 +121,18 @@ export class AbsentComponent implements AfterViewInit {
      * @returns {boolean} - true if the form is valid, false otherwise
      */
     private formIsValid(): boolean {
-
-        return this.firstName != null   && this.firstName != ''
-            && this.lastName != null    && this.lastName != ''
-            && this.reason != null      && this.reason != ''
-            && this.time != null        && this.time != ''
-            && this.month != null       && this.month > 0
-            && this.day != null;
+        return (
+            this.firstName != null &&
+            this.firstName != '' &&
+            this.lastName != null &&
+            this.lastName != '' &&
+            this.reason != null &&
+            this.reason != '' &&
+            this.time != null &&
+            this.time != '' &&
+            this.month != null &&
+            this.month > 0 &&
+            this.day != null
+        );
     }
 }

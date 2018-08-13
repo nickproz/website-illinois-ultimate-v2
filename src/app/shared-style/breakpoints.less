@@ -4,21 +4,21 @@
 @tablet-landscape: 1024px;
 @desktop: 1280px;
 
-@break-mobile-small: ~"screen and (min-width: @{mobile-small})";
-@break-mobile: ~"screen and (min-width: @{mobile})";
-@break-tablet-portrait: ~"screen and (min-width: @{tablet-portrait})";
-@break-tablet-landscape: ~"screen and (min-width: @{tablet-landscape})";
-@break-desktop: ~"screen and (min-width: @{desktop})";
-@break-tablet-portrait-to-landscape: ~"screen and (min-width: @{tablet-portrait}) and (max-width: @{tablet-portrait-max})";
-@break-mobile-to-tablet-landscape: ~"screen and (min-width: @{mobile}) and (max-width: @{tablet-portrait-max})";
+@break-mobile-small: ~'screen and (min-width: @{mobile-small})';
+@break-mobile: ~'screen and (min-width: @{mobile})';
+@break-tablet-portrait: ~'screen and (min-width: @{tablet-portrait})';
+@break-tablet-landscape: ~'screen and (min-width: @{tablet-landscape})';
+@break-desktop: ~'screen and (min-width: @{desktop})';
+@break-tablet-portrait-to-landscape: ~'screen and (min-width: @{tablet-portrait}) and (max-width: @{tablet-portrait-max})';
+@break-mobile-to-tablet-landscape: ~'screen and (min-width: @{mobile}) and (max-width: @{tablet-portrait-max})';
 
-@retina: ~"only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi)";
+@retina: ~'only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi)';
 
 // Max-width breakpoints should only be used when absolutely necessary. Mobile-first approaches should be the usual.
 @mobile-max: (@tablet-portrait - 1);
 @tablet-portrait-max: (@tablet-landscape - 1);
 @tablet-landscape-max: (@desktop - 1);
 
-@break-mobile-max: ~"screen and (max-width: @{mobile-max})";
-@break-tablet-portrait-max: ~"screen and (max-width: @{tablet-portrait-max})";
-@break-tablet-landscape-max: ~"screen and (max-width: @{tablet-landscape-max})";
+@break-mobile-max: ~'screen and (max-width: @{mobile-max})';
+@break-tablet-portrait-max: ~'screen and (max-width: @{tablet-portrait-max})';
+@break-tablet-landscape-max: ~'screen and (max-width: @{tablet-landscape-max})';
