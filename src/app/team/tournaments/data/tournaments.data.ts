@@ -2,6 +2,83 @@ import { TournamentYear } from '../model/tournament-year.model';
 
 export const TOURNAMENTS_DATA: TournamentYear[] = [
     {
+        year: 2018,
+        tournaments: [
+            {
+                season: 'Fall',
+                nameLabel: 'Boiler Breakaway',
+                nameLink: 'https://boilerlink.purdue.edu/event/972920',
+                when: 'Sept. 16th-17th',
+                location: 'West Lafayette, IN',
+                result: '-'
+            },
+            {
+                season: 'Fall',
+                nameLabel: 'No Wisconsequences',
+                nameLink: 'http://nowisconsequences.ultimatecentral.com',
+                when: 'Oct. 7th-8th',
+                location: 'Hartland, WI',
+                result: '-'
+            },
+            {
+                season: 'Fall',
+                nameLabel: 'Missouri Loves Company',
+                nameLink: 'http://ultimate.missouri.edu/mlc/2017/',
+                when: 'Nov. 4th-5th',
+                location: 'Columbia, MO',
+                result: '-'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'Mid-Atlantic Warmup',
+                nameLink: 'https://play.usaultimate.org/events/Mid-Atlantic-Warmup-2018/',
+                when: 'Feb. 3rd-4th',
+                location: 'Williamsburg, VA',
+                result: '1st'
+            },
+            {
+                season: 'Spring',
+                nameLabel: `President's Day Invite`,
+                nameLink: 'https://play.usaultimate.org/events/Presidents-Day-Invitational-Tournament-2018/',
+                when: 'Feb. 17th-19th',
+                location: 'San Diego, CA',
+                result: '9th'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'Centex',
+                nameLink: 'https://play.usaultimate.org/events/Mens-Centex-2018/',
+                when: 'March 10th-11th',
+                location: 'Austin, TX',
+                result: '6th'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'Huck Finn',
+                nameLink: 'https://play.usaultimate.org/events/Huck-Finn-2018/',
+                when: 'March 31st-April 1st',
+                location: 'St. Louis, MO',
+                result: '13th'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'Illinois Conferences',
+                nameLink: 'https://play.usaultimate.org/events/Illinois-D-I-College-Mens-CC-2018/',
+                when: 'April 14th-15th',
+                location: 'Rantoul, IL',
+                result: '2nd'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'Great Lakes Regionals',
+                nameLink: 'https://play.usaultimate.org/events/Great-Lakes-D-I-College-Mens-Regionals-2018/',
+                when: 'April 28th-29th',
+                location: 'Brighton, MI',
+                result: 'T-3rd'
+            }
+        ]
+    },
+    {
         year: 2017,
         tournaments: [
             {
