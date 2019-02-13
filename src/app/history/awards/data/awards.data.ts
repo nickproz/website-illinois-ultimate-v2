@@ -2,6 +2,11 @@ import { Award } from '../model/award.model';
 
 export const AWARDS_DATA: Award[] = [
     {
+        year: 2017,
+        name: 'Drake Hill',
+        award: 'All-Freshman'
+    },
+    {
         year: 2016,
         name: 'Nick Prozorovsky',
         award: '1st Team'
