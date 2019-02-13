@@ -2,6 +2,117 @@ import { RosterYear } from '../model/roster-year.model';
 
 export const ROSTER_DATA: RosterYear[] = [
     {
+        year: 2018,
+        imagePath: './assets/team-photo-2018.jpg',
+        players: [
+            {
+                number: 1,
+                name: 'Drake Hill',
+                year: 'Sophomore'
+            },
+            {
+                number: 2,
+                name: `Ben 'Beef' Sabourin`,
+                year: 'Junior'
+            },
+            {
+                number: 4,
+                name: 'Asa Bowen',
+                year: 'Freshman'
+            },
+            {
+                number: 6,
+                name: 'Jacob Cuthbert',
+                year: 'Junior'
+            },
+            {
+                number: 7,
+                name: 'Kevin Lin',
+                year: 'Senior'
+            },
+            {
+                number: 8,
+                name: 'Devin Kelly',
+                year: 'Junior'
+            },
+            {
+                number: 13,
+                name: 'Walter Jaskowiak',
+                year: 'Junior'
+            },
+            {
+                number: 19,
+                name: 'Jacob Komenda*',
+                year: 'Senior'
+            },
+            {
+                number: 20,
+                name: 'Ryan Kantor',
+                year: 'Junior'
+            },
+            {
+                number: 23,
+                name: 'Hector Moreno',
+                year: 'Senior'
+            },
+            {
+                number: 24,
+                name: 'Josh Deeman*',
+                year: 'Junior'
+            },
+            {
+                number: 28,
+                name: 'Frank Dore',
+                year: 'Junior'
+            },
+            {
+                number: 35,
+                name: 'Cameron Hartman',
+                year: 'Junior'
+            },
+            {
+                number: 36,
+                name: 'Dalton Chaffee',
+                year: 'Grad'
+            },
+            {
+                number: 38,
+                name: 'John Kulikowski',
+                year: 'Junior'
+            },
+            {
+                number: 47,
+                name: 'Grant Whitman',
+                year: 'Senior'
+            },
+            {
+                number: 55,
+                name: 'Murray Chen',
+                year: 'Senior'
+            },
+            {
+                number: 74,
+                name: 'Anthony Ruzzo',
+                year: 'Freshman'
+            },
+            {
+                number: 89,
+                name: 'Reid Martin',
+                year: 'Freshman'
+            },
+            {
+                number: 96,
+                name: 'Dirk Husemann',
+                year: 'Senior'
+            },
+            {
+                number: undefined,
+                name: 'Daniel McDonald',
+                year: 'Coach'
+            }
+        ]
+    },
+    {
         year: 2017,
         imagePath: './assets/team-photo-2017.jpg',
         players: [
