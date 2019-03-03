@@ -2,6 +2,92 @@ import { TournamentYear } from '../model/tournament-year.model';
 
 export const TOURNAMENTS_DATA: TournamentYear[] = [
     {
+        year: 2019,
+        tournaments: [
+            {
+                season: 'Fall',
+                nameLabel: 'Stanley Cup',
+                nameLink: '',
+                when: 'Sept. 15th-16th',
+                location: 'Normal, IL',
+                result: '-'
+            },
+            {
+                season: 'Fall',
+                nameLabel: 'No Wisconsequences',
+                nameLink: 'http://nowisconsequences.ultimatecentral.com/',
+                when: 'Oct. 6th-7th',
+                location: 'Hartland, WI',
+                result: 'Cancelled'
+            },
+            {
+                season: 'Fall',
+                nameLabel: 'Missouri Loves Company',
+                nameLink:
+                    'https://www.facebook.com/MissouriLovesCompany2018/?__tn__=kC-R&eid=ARD-KglibzvntFiwk2JIDOD7ylzeCvYMbvSB_99_VM1USVNvHhUI-xbx9_5daViGshubp48EAO_JeeQN&hc_ref=ARTJXZoaRgrfp1S7ZG7wFELrx16ZzqCQFcVGc0QTgJRTXYDiQzO5vvz7C7w98xlGwlQ&fref=nf&__xts__[0]=68.ARCyulKkGdiLaL5RY_ewBJJWmIkPdXmYjylVbU1evhOA8aoDo2_4d1-gUj0K4XicIY-HFgNGrqckgixrUWF8wLlYLEOEbjGJELrPVLQJWNQd-6jNksBooiRrMXDGPJluVge-2PBdUQilJrrLatP_ZcJhVYl551eFsop8NRJbIFTCqIPsdaKbj8Ggei4fvK4bZCKmz713zkUebAyg0wossHhbsRjhfQOvXK5Qw4K01SqL_OOKS6TWXAiCNgo5lPfjYvXyv8DOJZu1yfJxqBqXGltD5gJ01APAoEbn9MWANl4VPubpnCJTyYsDC04AC4sBWgpgtKsWCCkuNSVAVU0',
+                when: 'November 3rd-4th',
+                location: 'Columbia, MO',
+                result: '-'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'T-Town Throwdown',
+                nameLink: 'https://play.usaultimate.org/events/T-Town-Throwdown/',
+                when: 'Jan. 26th-27th',
+                location: 'Tuscaloosa, AL',
+                result: '3rd'
+            },
+            {
+                season: 'Spring',
+                nameLabel: `President's Day Invite`,
+                nameLink: 'https://play.usaultimate.org/events/Presidents-Day-Invite-2019/',
+                when: 'Feb. 16th-18th',
+                location: 'San Diego, CA',
+                result: '10th'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'Centex',
+                nameLink: 'https://play.usaultimate.org/events/Centex-2019-Men-/',
+                when: 'March 16th-17th',
+                location: 'Austin, TX',
+                result: 'TBD'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'Huck Finn',
+                nameLink: 'https://play.usaultimate.org/events/Huck-Finn-XXIII/',
+                when: 'March 30th-31st',
+                location: 'St. Charles, MO',
+                result: 'TBD'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'Illinois Conferences',
+                nameLink: 'https://play.usaultimate.org/events/Illinois-D-I-College-Mens-CC-2019/',
+                when: 'April 13th-14th',
+                location: 'Rantoul, IL',
+                result: 'TBD'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'Great Lakes Regionals',
+                nameLink: 'https://play.usaultimate.org/events/Great-Lakes-D-I-College-Mens-Regionals-2019/',
+                when: 'April 27th-28th',
+                location: 'Joliet, IL',
+                result: 'TBD'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'D-I National Championships',
+                nameLink: '',
+                when: 'May 24th-27th',
+                location: 'Round Rock, TX',
+                result: 'TBD'
+            }
+        ]
+    },
+    {
         year: 2018,
         tournaments: [
             {
