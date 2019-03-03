@@ -2,6 +2,117 @@ import { RosterYear } from '../model/roster-year.model';
 
 export const ROSTER_DATA: RosterYear[] = [
     {
+        year: 2019,
+        imagePath: './assets/team-photo-2019.jpg',
+        players: [
+            {
+                number: 1,
+                name: 'Drake Hill',
+                year: 'Junior'
+            },
+            {
+                number: 2,
+                name: 'Ben Sabourin*',
+                year: 'Senior'
+            },
+            {
+                number: 4,
+                name: 'Asa Bowen',
+                year: 'Sophomore'
+            },
+            {
+                number: 6,
+                name: 'Jacob Cuthbert',
+                year: 'Senior'
+            },
+            {
+                number: 7,
+                name: 'Alex Liu',
+                year: 'Sophomore'
+            },
+            {
+                number: 8,
+                name: 'Devin Kelly',
+                year: 'Senior'
+            },
+            {
+                number: 13,
+                name: 'Reid Martin*',
+                year: 'Sophomore'
+            },
+            {
+                number: 14,
+                name: 'Aidan Levin',
+                year: 'Sophomore'
+            },
+            {
+                number: 20,
+                name: 'Ryan Kantor',
+                year: 'Senior'
+            },
+            {
+                number: 22,
+                name: 'Joey Kennedy',
+                year: 'Freshman'
+            },
+            {
+                number: 22,
+                name: 'Lucas Gough',
+                year: 'Junior'
+            },
+            {
+                number: 24,
+                name: 'Josh Deeman*',
+                year: 'Senior'
+            },
+            {
+                number: 31,
+                name: 'Frank Dore',
+                year: 'Senior'
+            },
+            {
+                number: 32,
+                name: 'Daman Mulye',
+                year: 'Freshman'
+            },
+            {
+                number: 35,
+                name: 'Cameron Hartman',
+                year: 'Senior'
+            },
+            {
+                number: 38,
+                name: 'John Kulikowski',
+                year: 'Senior'
+            },
+            {
+                number: 40,
+                name: 'Rishav Rout',
+                year: 'Sophomore'
+            },
+            {
+                number: 46,
+                name: 'Nate Willis',
+                year: 'Grad'
+            },
+            {
+                number: 74,
+                name: 'Anthony Ruzzo',
+                year: 'Sophomore'
+            },
+            {
+                number: 82,
+                name: 'Brandon Carrel',
+                year: 'Junior'
+            },
+            {
+                number: undefined,
+                name: 'Daniel McDonald',
+                year: 'Coach'
+            }
+        ]
+    },
+    {
         year: 2018,
         imagePath: './assets/team-photo-2018.jpg',
         players: [
