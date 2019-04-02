@@ -10,8 +10,7 @@ import { GtmUtil } from '../global/util/gtm.util';
 })
 export class ProspectivePlayersComponent implements OnInit {
     // API url for our personal server
-    private googleSheetsApiUrl =
-        'https://nick-proz-google-sheet-api.herokuapp.com/sheets/11ijrHoysiIwsFfEggbSNM9Y8VvzU65jeuhQ3vkV5FGw/sheetIndex/2/rows/';
+    private googleSheetsApiUrl = 'https://nick-proz-node-server.herokuapp.com/sheets/11ijrHoysiIwsFfEggbSNM9Y8VvzU65jeuhQ3vkV5FGw/sheetIndex/2/rows/';
     // API url for our backup server (sheetsu API)
     // private googleSheetsBackupApiUrl = 'https://sheetsu.com/apis/v1.0/7a030ae60b7d';
     private googleSheetsBackupApiUrl = '';
