@@ -10,15 +10,15 @@ export const PRACTICE_DATA: Practice[] = [
         locationLink:
             'https://www.google.com/maps/place/Florida+and+Lincoln+Playing+Field/@40.0966964,-88.2242806,16z/data=!4m5!1m2!2m1!1scomplex+fields!3m1!1s0x0000000000000000:0x13633840896e25bf'
     },
-    {
-        season: 'Fall',
-        what: 'Weekend Invite Practice',
-        time: 'TBD',
-        when: 'Weekends',
-        locationLabel: 'Complex Fields',
-        locationLink:
-            'https://www.google.com/maps/place/Florida+and+Lincoln+Playing+Field/@40.0966964,-88.2242806,16z/data=!4m5!1m2!2m1!1scomplex+fields!3m1!1s0x0000000000000000:0x13633840896e25bf'
-    },
+    //{
+    //season: 'Fall',
+    //what: 'Weekend Invite Practice',
+    //time: 'TBD',
+    //when: 'Weekends',
+    //locationLabel: 'Complex Fields',
+    //locationLink:
+    //'https://www.google.com/maps/place/Florida+and+Lincoln+Playing+Field/@40.0966964,-88.2242806,16z/data=!4m5!1m2!2m1!1scomplex+fields!3m1!1s0x0000000000000000:0x13633840896e25bf'
+    //},
     {
         season: 'Winter',
         what: 'Normal Practice',
@@ -31,7 +31,7 @@ export const PRACTICE_DATA: Practice[] = [
     {
         season: 'Winter',
         what: 'Indoor Field Practice',
-        time: '11PM-12AM',
+        time: '9PM-11PM',
         when: 'Thursdays',
         locationLabel: 'Irwin Facility',
         locationLink:
@@ -40,7 +40,7 @@ export const PRACTICE_DATA: Practice[] = [
     {
         season: 'Spring',
         what: 'Normal Practice',
-        time: '9:30PM-12AM',
+        time: '4:30PM-7PM',
         when: 'Mondays & Wednesdays',
         locationLabel: 'Complex Fields',
         locationLink:
@@ -48,9 +48,9 @@ export const PRACTICE_DATA: Practice[] = [
     },
     {
         season: 'Spring',
-        what: 'A-Team Practice',
-        time: 'TBD',
-        when: 'Weekends',
+        what: 'Normal Practice',
+        time: '11AM-1PM',
+        when: 'Non-Tournament Weekends',
         locationLabel: 'Complex Fields',
         locationLink:
             'https://www.google.com/maps/place/Florida+and+Lincoln+Playing+Field/@40.0966964,-88.2242806,16z/data=!4m5!1m2!2m1!1scomplex+fields!3m1!1s0x0000000000000000:0x13633840896e25bf'
