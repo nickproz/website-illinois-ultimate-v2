@@ -51,7 +51,7 @@ export const TOURNAMENTS_DATA: TournamentYear[] = [
                 nameLink: 'https://play.usaultimate.org/events/Centex-2019-Men-/',
                 when: 'March 16th-17th',
                 location: 'Austin, TX',
-                result: 'TBD'
+                result: '9th'
             },
             {
                 season: 'Spring',
@@ -59,7 +59,7 @@ export const TOURNAMENTS_DATA: TournamentYear[] = [
                 nameLink: 'https://play.usaultimate.org/events/Huck-Finn-XXIII/',
                 when: 'March 30th-31st',
                 location: 'St. Charles, MO',
-                result: 'TBD'
+                result: '2nd'
             },
             {
                 season: 'Spring',
