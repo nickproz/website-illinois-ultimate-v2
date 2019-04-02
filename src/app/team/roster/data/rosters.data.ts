@@ -6,6 +6,11 @@ export const ROSTER_DATA: RosterYear[] = [
         imagePath: './assets/team-photo-2019.jpg',
         players: [
             {
+                number: 0,
+                name: 'Gregory Schwarz',
+                year: 'Grad'
+            },
+            {
                 number: 1,
                 name: 'Drake Hill',
                 year: 'Junior'
@@ -46,14 +51,19 @@ export const ROSTER_DATA: RosterYear[] = [
                 year: 'Sophomore'
             },
             {
+                number: 19,
+                name: 'Joey Kennedy',
+                year: 'Freshman'
+            },
+            {
                 number: 20,
                 name: 'Ryan Kantor',
                 year: 'Senior'
             },
             {
-                number: 22,
-                name: 'Joey Kennedy',
-                year: 'Freshman'
+                number: 21,
+                name: 'Ben Lee',
+                year: 'Junior'
             },
             {
                 number: 22,
