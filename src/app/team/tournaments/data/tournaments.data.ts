@@ -67,7 +67,7 @@ export const TOURNAMENTS_DATA: TournamentYear[] = [
                 nameLink: 'https://play.usaultimate.org/events/Illinois-D-I-College-Mens-CC-2019/',
                 when: 'April 13th-14th',
                 location: 'Rantoul, IL',
-                result: 'TBD'
+                result: 'T-2nd*'
             },
             {
                 season: 'Spring',
