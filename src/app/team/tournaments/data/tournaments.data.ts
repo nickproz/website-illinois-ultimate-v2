@@ -75,15 +75,7 @@ export const TOURNAMENTS_DATA: TournamentYear[] = [
                 nameLink: 'https://play.usaultimate.org/events/Great-Lakes-D-I-College-Mens-Regionals-2019/',
                 when: 'April 27th-28th',
                 location: 'Joliet, IL',
-                result: 'TBD'
-            },
-            {
-                season: 'Spring',
-                nameLabel: 'D-I National Championships',
-                nameLink: '',
-                when: 'May 24th-27th',
-                location: 'Round Rock, TX',
-                result: 'TBD'
+                result: '3rd'
             }
         ]
     },
