@@ -2,9 +2,17 @@ import { Result } from '../model/result.model';
 
 export const RESULTS_DATA: Result[] = [
     {
+        year: 2019,
+        sectionals: 'T-2nd',
+        regionals: '3rd',
+        nationals: '-',
+        teamPageLabel: 'USAU',
+        teamPageLink: 'https://play.usaultimate.org/teams/events/Eventteam/?TeamId=wZoyiwvCg1VhUIWNi1WDaBXsR6kdOBEmTJ6iynmvlbc%3d'
+    },
+    {
         year: 2018,
         sectionals: '2nd',
-        regionals: 'T-3rd',
+        regionals: 'T-5th',
         nationals: '-',
         teamPageLabel: 'USAU',
         teamPageLink: 'https://play.usaultimate.org/teams/events/Eventteam/?TeamId=8KdMUyGieTTE%2f5I3oGTamGGWX6SQ2mVHHrWtpy%2fdJkk%3d'
