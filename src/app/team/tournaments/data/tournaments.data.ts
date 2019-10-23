@@ -2,6 +2,35 @@ import { TournamentYear } from '../model/tournament-year.model';
 
 export const TOURNAMENTS_DATA: TournamentYear[] = [
     {
+        year: 2020,
+        tournaments: [
+            {
+                season: 'Fall',
+                nameLabel: 'Boiler Breakaway',
+                nameLink: 'https://docs.google.com/spreadsheets/d/1rcJneU3nzVusTHk0ZPfUZUiotz-OaKLq5NNANzee7hc/edit#gid=955795591',
+                when: 'Sept. 14th-15th',
+                location: 'Fair Oaks, IN',
+                result: '-'
+            },
+            {
+                season: 'Fall',
+                nameLabel: 'No Wisconsequences',
+                nameLink: 'https://scorereport.net/2019/mixed/event16413',
+                when: 'Oct. 5th-6th',
+                location: 'Hartland, WI',
+                result: '-'
+            },
+            {
+                season: 'Fall',
+                nameLabel: 'Missouri Loves Company',
+                nameLink: '',
+                when: 'Nov. 2nd-3rd',
+                location: 'Hartland, WI',
+                result: '-'
+            }
+        ]
+    },
+    {
         year: 2019,
         tournaments: [
             {
