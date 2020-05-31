@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Headers, Http } from '@angular/http';
+import { Headers, Http, Response } from '@angular/http';
 
 /**
  * Service to interact with our Google spreadsheet.
@@ -21,11 +21,10 @@ export class SpreadsheetService {
      * @param data - data to add to our spreadsheet
      * @returns {Promise<JSON>} - Promise holding the successfully posted object, or a rejected promise with an error
      */
-    public postRowToSpreadsheet(apiUrl: string, backupApiUrl: string, data: Object): Promise<JSON> {
+    public postRowToSpreadsheet(apiUrl: string, backupApiUrl: string, data: Object): Promise<Response> {
         return this.http
             .post(apiUrl, data, { headers: this.headers })
             .toPromise()
-            .then((response) => response.json())
             .catch(SpreadsheetService.handleError);
         // .catch(() => this.postRowToSpreadsheetBackup(backupApiUrl, data));
     }
