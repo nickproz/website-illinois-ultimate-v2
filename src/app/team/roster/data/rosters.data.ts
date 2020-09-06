@@ -2,6 +2,127 @@ import { RosterYear } from '../model/roster-year.model';
 
 export const ROSTER_DATA: RosterYear[] = [
     {
+        year: 2020,
+        imagePath: './assets/team-photo-2020.jpg',
+        players: [
+            {
+                number: 0,
+                name: 'Gregory Schwarz',
+                year: 'Grad'
+            },
+            {
+                number: 1,
+                name: 'Drake Hill',
+                year: 'Senior'
+            },
+            {
+                number: 2,
+                name: 'Tyler Smiles',
+                year: 'Sophomore'
+            },
+            {
+                number: 3,
+                name: 'Christopher Nguyen',
+                year: 'Sophomore'
+            },
+            {
+                number: 4,
+                name: 'Asa Bowen',
+                year: 'Junior'
+            },
+            {
+                number: 7,
+                name: 'Alex Liu',
+                year: 'Junior'
+            },
+            {
+                number: 11,
+                name: 'Joey Kennedy*',
+                year: 'Sophomore'
+            },
+            {
+                number: 13,
+                name: 'Reid Martin*',
+                year: 'Junior'
+            },
+            {
+                number: 14,
+                name: 'Aidan Levin',
+                year: 'Junior'
+            },
+            {
+                number: 15,
+                name: 'Arthur Albarran',
+                year: 'Sophomore'
+            },
+            {
+                number: 18,
+                name: 'Nelson Perumpel',
+                year: 'Junior'
+            },
+            {
+                number: 20,
+                name: 'Patrick Driscoll',
+                year: 'Freshman'
+            },
+            {
+                number: 22,
+                name: 'Lucas Gough',
+                year: 'Senior'
+            },
+            {
+                number: 24,
+                name: 'Arjun Tripathy',
+                year: 'Sophomore'
+            },
+            {
+                number: 27,
+                name: 'Jack Joshi',
+                year: 'Freshman'
+            },
+            {
+                number: 28,
+                name: 'Andy Kennedy',
+                year: 'Freshman'
+            },
+            {
+                number: 40,
+                name: 'Rishav Rout',
+                year: 'Junior'
+            },
+            {
+                number: 42,
+                name: 'Maanu Grover',
+                year: 'Junior'
+            },
+            {
+                number: 70,
+                name: 'Kevin Zhou',
+                year: 'Freshman'
+            },
+            {
+                number: 72,
+                name: 'Derek Peterson',
+                year: 'Junior'
+            },
+            {
+                number: 74,
+                name: 'Anthony Ruzzo*',
+                year: 'Junior'
+            },
+            {
+                number: 82,
+                name: 'Brandon Carrel',
+                year: 'Junior'
+            },
+            {
+                number: undefined,
+                name: 'Daniel McDonald',
+                year: 'Coach'
+            }
+        ]
+    },
+    {
         year: 2019,
         imagePath: './assets/team-photo-2019.jpg',
         players: [
@@ -113,7 +234,7 @@ export const ROSTER_DATA: RosterYear[] = [
             {
                 number: 82,
                 name: 'Brandon Carrel',
-                year: 'Junior'
+                year: 'Sophomore'
             },
             {
                 number: undefined,
