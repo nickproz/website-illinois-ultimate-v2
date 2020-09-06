@@ -26,7 +26,23 @@ export const TOURNAMENTS_DATA: TournamentYear[] = [
                 nameLink: '',
                 when: 'Nov. 2nd-3rd',
                 location: 'Hartland, WI',
-                result: '-'
+                result: '5th'
+            },
+            {
+                season: 'Spring',
+                nameLabel: 'T-Town Throwdown',
+                nameLink: 'https://play.usaultimate.org/events/TTown-Throwdown-2020-Open-/schedule/Men/CollegeMen/',
+                when: 'Jan. 8th-9th',
+                location: 'Tuscaloosa, AL',
+                result: '1st'
+            },
+            {
+                season: 'Spring',
+                nameLabel: `Presidents' Day Invite`,
+                nameLink: 'https://play.usaultimate.org/events/Presidents-Day-Invite-2020/schedule/Men/CollegeMen/',
+                when: 'Feb. 15th-17th',
+                location: 'San Diego, CA',
+                result: '16th'
             }
         ]
     },
@@ -68,7 +84,7 @@ export const TOURNAMENTS_DATA: TournamentYear[] = [
             },
             {
                 season: 'Spring',
-                nameLabel: `President's Day Invite`,
+                nameLabel: `Presidents' Day Invite`,
                 nameLink: 'https://play.usaultimate.org/events/Presidents-Day-Invite-2019/',
                 when: 'Feb. 16th-18th',
                 location: 'San Diego, CA',
@@ -145,7 +161,7 @@ export const TOURNAMENTS_DATA: TournamentYear[] = [
             },
             {
                 season: 'Spring',
-                nameLabel: `President's Day Invite`,
+                nameLabel: `Presidents' Day Invite`,
                 nameLink: 'https://play.usaultimate.org/events/Presidents-Day-Invitational-Tournament-2018/',
                 when: 'Feb. 17th-19th',
                 location: 'San Diego, CA',
@@ -214,7 +230,7 @@ export const TOURNAMENTS_DATA: TournamentYear[] = [
             },
             {
                 season: 'Spring',
-                nameLabel: `President's Day Invite`,
+                nameLabel: `Presidents' Day Invite`,
                 nameLink: 'http://play.usaultimate.org/events/Presidents-Day-Tournament-2017',
                 when: 'Feb. 17th-20th',
                 location: 'San Diego, CA',
