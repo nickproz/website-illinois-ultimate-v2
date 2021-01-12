@@ -18,12 +18,14 @@ export class TeamHistoryComponent implements OnInit, AfterViewInit {
     private year: number;
 
     // Year dropdowns
-    @ViewChild('1994dropdown')
+    @ViewChild('1980dropdown')
     private firstDropdown: ElementRef;
-    @ViewChild('2000dropdown')
+    @ViewChild('1994dropdown')
     private secondDropdown: ElementRef;
-    @ViewChild('2010dropdown')
+    @ViewChild('2000dropdown')
     private thirdDropdown: ElementRef;
+    @ViewChild('2010dropdown')
+    private fourthDropdown: ElementRef;
 
     // Inject the ActivatedRoute into our component
     constructor(private route: ActivatedRoute) {}
@@ -32,6 +34,7 @@ export class TeamHistoryComponent implements OnInit, AfterViewInit {
         $(this.firstDropdown.nativeElement).dropdown({});
         $(this.secondDropdown.nativeElement).dropdown({});
         $(this.thirdDropdown.nativeElement).dropdown({});
+        $(this.fourthDropdown.nativeElement).dropdown({});
     }
 
     /**
