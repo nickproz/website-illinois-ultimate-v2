@@ -253,14 +253,14 @@ export const HISTORY_DATA: HistoryYear[] = [
     },
     {
         year: 1986,
-        imagePath: '',
+        imagePath: './assets/team-photo-1986.jpg',
         summaryMarkup: `
             <p>In the Spring of 1986 we traveled to Ball State and won sectionals, by a wide margin, pounding on Ball State in the Finals. A week later, we hosted Regionals at the U of I. Only two teams would go to College Nationals and we knew we had to beat either Kansas (the Horrorzontals) or the #1 Seed, Southwest Missouri State. We lost to Southwest Missouri State in pool play on day 1, which set up a semi-final game with KU on Sunday. We lost in a close back and forth game, on a brutally hot day.</p>
         `
     },
     {
         year: 1984,
-        imagePath: '',
+        imagePath: './assets/team-photo-1985.jpg',
         summaryMarkup: `
             <p>The team was bolstered by the addition of a few excellent players who came to town for school: Brent Russell, a speedy, rangy, intense "deep" player who could always get open long. Jeff Sternberg, a graduate student in Chemistry who was an excellent handler, and Ricky Werner, a Japanese major with superior disc skills. There also were a number of undergraduates who were just learning the game, but were excellent athletes like: Mike "Spike" Balas, Phil Lawrence, Phil Kerwin, Jake Stake, and Mike McClain. And as these guys improved, the team improved. Rounding out the team were Ed Flint, another grad student/handler and Mike Tower, who, along with his brother, Pat, had played on Windy City. Mike, like all players from City, had an incredible arsenal of throws.<p> <p>By the winter of 1984 we had gotten more organized and started having regular winter practices in the old Armory and we started getting serious about conditioning and building a team spirit.</p> <p>We started peaking in the Fall of 1985, beating Full Tilt on their home field and competing successfully in tournaments from St Louis to the "Poultry Days" tourney in Versailles, Ohio.</p>
         `
