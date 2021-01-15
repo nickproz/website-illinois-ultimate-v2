@@ -18,7 +18,7 @@ export class TeamHistoryComponent implements OnInit, AfterViewInit {
     private year: number;
 
     // Year dropdowns
-    @ViewChild('1980dropdown')
+    @ViewChild('1978dropdown')
     private firstDropdown: ElementRef;
     @ViewChild('1994dropdown')
     private secondDropdown: ElementRef;

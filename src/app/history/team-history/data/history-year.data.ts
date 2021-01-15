@@ -259,24 +259,24 @@ export const HISTORY_DATA: HistoryYear[] = [
         `
     },
     {
-        year: 1984,
+        year: 1985,
         imagePath: './assets/team-photo-1985.jpg',
         summaryMarkup: `
-            <p>The team was bolstered by the addition of a few excellent players who came to town for school: Brent Russell, a speedy, rangy, intense "deep" player who could always get open long. Jeff Sternberg, a graduate student in Chemistry who was an excellent handler, and Ricky Werner, a Japanese major with superior disc skills. There also were a number of undergraduates who were just learning the game, but were excellent athletes like: Mike "Spike" Balas, Phil Lawrence, Phil Kerwin, Jake Stake, and Mike McClain. And as these guys improved, the team improved. Rounding out the team were Ed Flint, another grad student/handler and Mike Tower, who, along with his brother, Pat, had played on Windy City. Mike, like all players from City, had an incredible arsenal of throws.<p> <p>By the winter of 1984 we had gotten more organized and started having regular winter practices in the old Armory and we started getting serious about conditioning and building a team spirit.</p> <p>We started peaking in the Fall of 1985, beating Full Tilt on their home field and competing successfully in tournaments from St Louis to the "Poultry Days" tourney in Versailles, Ohio.</p>
+            <p>From 1985 to at least 1988 the team became known as Tiny Livestock and took on a new spirit. Jack Adams came up with the name "Tiney Livestock" and, along with Blake Wolf, made us shirts that we wore for the next two years.</p> <p>The team, with its new additions from the previous year, started peaking in the Fall of 1985, beating Full Tilt on their home field and competing successfully in tournaments from St Louis to the "Poultry Days" tourney in Versailles, Ohio.</p> <p>Led by botany grad student Tom Carol and a few others, TL became a much more serious team. We won sectionals in 1985 at Ball State missing out on a national bid by losing to SWMS and Kansas when Illinois hosted the Regionals in Champaign. The team later included an emerging Freshman named Kevin Pondy who later took the team to an even higher standard in the late 80s.</p>
         `
     },
     {
         year: 1983,
         imagePath: '',
         summaryMarkup: `
-            <p>From 1983 to at least 1988 the team became known as Tiny Livestock and took on a new spirit. Jack Adams came up with the name "Tiny Livestock" and, along with Blake Wolf, made us shirts that we wore for the next two years.</p> <p>The first year, TL practiced in Carle Park in Urbana. There was a lot of interest in the team and a number of students started showing up. Led by botany grad student Tom Carol and a few others, TL became a much more serious team. We travelled all over the midwest, playing all the great teams of the era: Windy City, The Tunas, and our college nemesis, Full Tilt Ultimate from Carbondale. We won sectionals in 1983 at Ball State missing out on a national bid by losing to SWMS and Kansas when Illinois hosted the Regionals in Champaign. The team later included an emerging Freshman named Kevin Pondy who later took the team to an even higher standard in the late 80s.</p>
+            <p>In 1983, TL began practicing in Carle Park in Urbana. There was a lot of interest in the team and a number of students started showing up. We travelled all over the midwest, playing all the great teams of the era: Windy City, The Tunas, and our college nemesis, Full Tilt Ultimate from Carbondale.</p> <p>The team was bolstered by the addition of a few excellent players who came to town for school: Brent Russell, a speedy, rangy, intense "deep" player who could always get open long. Jeff Sternberg, a graduate student in Chemistry who was an excellent handler, and Ricky Werner, a Japanese major with superior disc skills. There also were a number of undergraduates who were just learning the game, but were excellent athletes like: Mike "Spike" Balas, Phil Lawrence, Phil Kerwin, Jake Stake, and Mike McClain. And as these guys improved, the team improved. Rounding out the team were Ed Flint, another grad student/handler and Mike Tower, who, along with his brother, Pat, had played on Windy City. Mike, like all players from City, had an incredible arsenal of throws.</p> <p>By the winter of 1984 we had gotten more organized and started having regular winter practices in the old Armory and we started getting serious about conditioning and building a team spirit.</p>
         `
     },
     {
-        year: 1980,
+        year: 1978,
         imagePath: '',
         summaryMarkup: `
-            <p>From at least 1980 to 1982 the team was called The Rastas, and that pretty much summed up the ethos. We had a few good players, but let's just say the team was not completely focused on athletic excellence. The class of the region back then was Earlham College and SIU (Full Tilt). Earlham was an early adopter of a tight zone (4-2-1) and, without strong disc skills, it was pretty daunting. SIU was an athletic group that had speed and solid skills with players like Future Windy City star Dean Smith.</p>
+            <p>From at least 1978 to 1983 the team was called The Rastas, and that pretty much summed up the ethos. We had a few good players, but let's just say the team was not completely focused on athletic excellence. The class of the region back then was Earlham College and SIU (Full Tilt). Earlham was an early adopter of a tight zone (4-2-1) and, without strong disc skills, it was pretty daunting. SIU was an athletic group that had speed and solid skills with players like Future Windy City star Dean Smith</p>
         `
     }
 ];

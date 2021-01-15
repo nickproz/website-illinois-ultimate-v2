@@ -1,11 +1,11 @@
 <h1 class="ui header">Team History</h1>
 <div class="ui secondary pointing menu">
-    <div #1980dropdown class="ui dropdown item">
-        1980-1986<i class="dropdown icon"></i>
+    <div #1978dropdown class="ui dropdown item">
+        1978-1986<i class="dropdown icon"></i>
         <div class="menu">
-            <div routerLink="/history/1980" [routerLinkActive]="['active']" class="item">1980-82</div>
-            <div routerLink="/history/1983" [routerLinkActive]="['active']" class="item">1983</div>
-            <div routerLink="/history/1984" [routerLinkActive]="['active']" class="item">1984-85</div>
+            <div routerLink="/history/1978" [routerLinkActive]="['active']" class="item">1978-1982</div>
+            <div routerLink="/history/1983" [routerLinkActive]="['active']" class="item">1983-1984</div>
+            <div routerLink="/history/1985" [routerLinkActive]="['active']" class="item">1985</div>
             <div routerLink="/history/1986" [routerLinkActive]="['active']" class="item">1986</div>
         </div>
     </div>
@@ -57,5 +57,5 @@
     </ng-container>
 </ng-container>
 <!--Only show the previous and next button if they are within the bounds of our history summaries-->
-<a *ngIf="year > 1980" routerLink="/history/{{year - 1}}"><i class="angle double left icon"></i></a>
+<a *ngIf="year > 1978" routerLink="/history/{{year - 1}}"><i class="angle double left icon"></i></a>
 <a *ngIf="year < 2017" routerLink="/history/{{year + 1}}"><i class="angle double right icon"></i></a>
