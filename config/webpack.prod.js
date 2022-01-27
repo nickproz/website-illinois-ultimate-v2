@@ -4,7 +4,7 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 let commonConfig = require('./webpack.common.js');
 let helpers = require('./helpers');
 
-const ENV = process.env.NODE_ENV = process.env.ENV = 'prod';
+const ENV = (process.env.NODE_ENV = process.env.ENV = 'prod');
 
 module.exports = webpackMerge(commonConfig, {
     // Dev tool for allowing the ability to set breakpoints
@@ -34,7 +34,8 @@ module.exports = webpackMerge(commonConfig, {
         new webpack.optimize.DedupePlugin(),
 
         // Minifies the bundles (not available with ES6)
-        new webpack.optimize.UglifyJsPlugin({ // https://github.com/angular/angular/issues/10618
+        new webpack.optimize.UglifyJsPlugin({
+            // https://github.com/angular/angular/issues/10618
             mangle: {
                 keep_fnames: true
             }
@@ -45,7 +46,7 @@ module.exports = webpackMerge(commonConfig, {
         // Used to define environment variables that we can reference within our application
         new webpack.DefinePlugin({
             'process.env': {
-                'ENV': JSON.stringify(ENV)
+                ENV: JSON.stringify(ENV)
             }
         })
     ]

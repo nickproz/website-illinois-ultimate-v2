@@ -26,6 +26,8 @@ export class TeamHistoryComponent implements OnInit, AfterViewInit {
     private thirdDropdown: ElementRef;
     @ViewChild('2010dropdown')
     private fourthDropdown: ElementRef;
+    @ViewChild('2019dropdown')
+    private fifthDropdown: ElementRef;
 
     // Inject the ActivatedRoute into our component
     constructor(private route: ActivatedRoute) {}
@@ -35,6 +37,7 @@ export class TeamHistoryComponent implements OnInit, AfterViewInit {
         $(this.secondDropdown.nativeElement).dropdown({});
         $(this.thirdDropdown.nativeElement).dropdown({});
         $(this.fourthDropdown.nativeElement).dropdown({});
+        $(this.fifthDropdown.nativeElement).dropdown({});
     }
 
     /**

@@ -4,6 +4,15 @@ src/public/assets
 # HTML
 *.html
 
+# Config Files
+CNAME
+.stylelintrc
+.prettierignore
+.gitignore
+
 # DS Store
 src/public/.DS_Store
 src/.DS_Store
+
+# Notes
+TODO.txt

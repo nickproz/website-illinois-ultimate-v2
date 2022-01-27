@@ -2,6 +2,14 @@ import { Result } from '../model/result.model';
 
 export const RESULTS_DATA: Result[] = [
     {
+        year: 2021,
+        sectionals: '2nd',
+        regionals: '2nd',
+        nationals: 'T-17th',
+        teamPageLabel: 'USAU',
+        teamPageLink: 'https://play.usaultimate.org/teams/events/Eventteam/?TeamId=%2b1VYkWBgGsaliepv6mKRZGz0Vl0rSVDaK6K4Mw7pTT4%3d'
+    },
+    {
         year: 2020,
         sectionals: 'Cancelled due to COVID-19',
         regionals: 'Cancelled due to COVID-19',

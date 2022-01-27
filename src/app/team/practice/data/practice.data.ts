@@ -54,5 +54,13 @@ export const PRACTICE_DATA: Practice[] = [
         locationLabel: 'Complex Fields',
         locationLink:
             'https://www.google.com/maps/place/Florida+and+Lincoln+Playing+Field/@40.0966964,-88.2242806,16z/data=!4m5!1m2!2m1!1scomplex+fields!3m1!1s0x0000000000000000:0x13633840896e25bf'
+    },
+    {
+        season: '',
+        what: '',
+        time: 'While unlikely, times subject to change based on field availability',
+        when: '',
+        locationLabel: '',
+        locationLink: ''
     }
 ];

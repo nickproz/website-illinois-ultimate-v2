@@ -2,6 +2,34 @@ import { HistoryYear } from '../model/history-year.model';
 
 export const HISTORY_DATA: HistoryYear[] = [
     {
+        year: 2021,
+        imagePath: './assets/team-photo-2021.jpg',
+        summaryMarkup: `
+        <p> This year was an important year for Illinois Ultimate, as we were able to play with graduated seniors for the Fall 2021 USAU College Series. The Great Lakes region, which includes Michigan, Kentucky, Indiana, and Illinois, had an unexpected 2 bids to Nationals due to the size of the region. </p>
+        <p> The season started with tryout tournaments at Butler and Stanley Cup, which finally put some of the 2020 freshmen on the field against non-Illinois. With cuts made, the A team with its graduated seniors swept most of the competition at Sectionals, landing the one championship game on Sunday against University of Chicago. This game was messy, with Rantoul having thunderstorms for an hour before the game start time and muddy conditions, and Illinois lost the game 9-7, but still able to make it to Regionals. </p>
+        <p> At Great Lakes Regionals in Holland, Michigan, we finally were able to have our rookie Eli Artemakis play in his first College sanctioned game. Within pool play we went 3-1, losing only to Michigan. Without the guarentee of a championship game on sunday, Illinois Rise had to struggle through the Sunday morning gauntlet to get the second bid at Nationals. </p>
+        <p> On Sunday, the first game was against Purdue, another rival within our region. Illinois beat them 13-10 and moved to the second game against Kentucky. Another tough game at the beginning, but we found cracks in the defense with allowed for a commanding 15-8 win. Michigan and Indiana were in the championship game, and Michigan handedly beat Indiana for the first bid to Nationals. Our last game was against Indiana for the second bid to Nationals. With amazing plays from both sides, there were very little chances to break, and with the support of parents, Menace, and fellow teammates, Reid Martin made the final catch during hard cap for a break score, beating Indiana 12-10. Illinois was going to Nationals for the first time in six years. </p>
+        <p> At Nationals in Norco, CA, the team understood that they were playing against national caliber teams. During pool play, each game was hard fought, going 10-15 against Tulane, 13-15 against Pitt, 5-15 against Brown, and 9-15 against NC State. Illinois' only win came on consolation Sunday against Cornell, winning 15-13 and coming in tied for 17th place nationally. After the competition, our very own Eli Artemakis was voted D-I rookie of the year, with more votes than all other candidates combined. With this National appearance under their belts, Illinois strives to reach Nationals every year.</p>
+        `
+    },
+    {
+        year: 2020,
+        imagePath: './assets/team-photo-2020.jpg',
+        summaryMarkup: `
+        <p>This season was cancelled due to the COVID-19 pandemic, but the efforts were not lost. Reid Martin, Joey Kennedy, and Anthony Ruzzo remained captains for the year, and pushed the team to improve even with all the restrictions. Practices went on during the school year, but everyone had to be separated into pods in the fall for social distancing and safety measures. We introduced skills competitions to allow for interaction for the entire team.</p>
+        <p>With the rise of the spring, the team found that the spring 2021 season would be delayed to Fall 2021, and would allow previously graduated players to play for the team. It was during the spring that the road to Nationals was started, with the entire team focused on improving their skills to compete at the highest level. </p>
+        `
+    },
+    {
+        year: 2019,
+        imagePath: './assets/team-photo-2019.jpg',
+        summaryMarkup: `
+        <p>Our 2019 year had Reid Martin, Joey Kennedy, and Anthony Ruzzo as the head of the Illinois Ultimate. This was a special year for the program as we initiated a rebrand to Illinois Rise, and sported our bread reversibles for the first time at T-Town Throwdown in Tuscaloosa. We found a lot of success, taking first place at T-Town and excited for the new year.</p>
+        <p>However, at our next premier tournament in California, Prez Day, we suffered badly through injuries and losses, coming to 17th place. The team wanted to prove themselves again at Centex 2020, but unfortunately, the start of the COVID-19 Pandemic put a short end to our college series.</p>
+        <p>With the start of the pandemic, many people were forced to go home. Reid Martin as captain kept involvement with the team high even through remote participation with workout plans and daily motivation with the goal to reach Nationals as a program </p>
+        `
+    },
+    {
         year: 2017,
         imagePath: './assets/team-photo-2017.jpg',
         summaryMarkup: `

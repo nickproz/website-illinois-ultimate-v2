@@ -8,11 +8,11 @@ module.exports = {
     // All entry files to find and incorporate dependencies for
     entry: {
         // Standard polyfills we require to run Angular applications in modern browsers
-        'polyfills': './src/polyfills.ts',
+        polyfills: './src/polyfills.ts',
         // Vendor files we need (angular, lodash, semantic.css, etc.)
-        'vendor': './src/vendor.ts',
+        vendor: './src/vendor.ts',
         // Our application code
-        'app': './src/main.ts'
+        app: './src/main.ts'
     },
 
     // Resolves import statements that don't mention an extension at all (first searches for the file with no extension, then *file*.ts, then *file*.js)
@@ -75,21 +75,27 @@ module.exports = {
         }),
 
         // Manually copy our favicon to dist
-        new CopyWebpackPlugin([{
-            from: './src/public/assets/images/global/favicon.ico',
-            to: 'assets/'
-        }]),
+        new CopyWebpackPlugin([
+            {
+                from: './src/public/assets/images/global/favicon.ico',
+                to: 'assets/'
+            }
+        ]),
 
         // Manually copy our CNAME file to dist for domain mapping
-        new CopyWebpackPlugin([{
-            from: './CNAME',
-            to: './'
-        }]),
+        new CopyWebpackPlugin([
+            {
+                from: './CNAME',
+                to: './'
+            }
+        ]),
 
         // Manually copy our roster photos to dist
-        new CopyWebpackPlugin([{
-            from: './src/public/assets/images/team/roster/',
-            to: 'assets/'
-        }])
+        new CopyWebpackPlugin([
+            {
+                from: './src/public/assets/images/team/roster/',
+                to: 'assets/'
+            }
+        ])
     ]
 };

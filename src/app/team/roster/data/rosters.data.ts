@@ -2,6 +2,147 @@ import { RosterYear } from '../model/roster-year.model';
 
 export const ROSTER_DATA: RosterYear[] = [
     {
+        year: 2021,
+        imagePath: './assets/team-photo-2021.jpg',
+        players: [
+            {
+                number: 0,
+                name: 'Gregory Schwarz',
+                year: 'Grad*'
+            },
+            {
+                number: 1,
+                name: 'Drake Hill',
+                year: 'Grad*'
+            },
+            {
+                number: 2,
+                name: 'Tyler Smiles',
+                year: 'Senior'
+            },
+            {
+                number: 4,
+                name: 'Asa Bowen',
+                year: 'Grad*'
+            },
+            {
+                number: 7,
+                name: 'Alex Liu',
+                year: 'Grad*'
+            },
+            {
+                number: 8,
+                name: 'Patrick "Mark" Driscoll',
+                year: 'Junior'
+            },
+            {
+                number: 9,
+                name: 'Kai Tang',
+                year: 'Sophomore'
+            },
+            {
+                number: 11,
+                name: 'Joey Kennedy*',
+                year: 'Senior'
+            },
+            {
+                number: 13,
+                name: 'Reid Martin*',
+                year: 'Grad*'
+            },
+            {
+                number: 14,
+                name: 'Aidan Levin',
+                year: 'Grad*'
+            },
+            {
+                number: 16,
+                name: 'Andy Kennedy',
+                year: 'Junior'
+            },
+            {
+                number: 21,
+                name: 'Eli Artemakis',
+                year: 'Sophomore'
+            },
+            {
+                number: 22,
+                name: 'Lucas Gough',
+                year: 'Grad*'
+            },
+            {
+                number: 24,
+                name: 'Arjun Tripathy',
+                year: 'Grad*'
+            },
+            {
+                number: 25,
+                name: 'Simon Perez',
+                year: 'Freshman'
+            },
+            {
+                number: 27,
+                name: 'Jack Joshi',
+                year: 'Junior'
+            },
+            {
+                number: 33,
+                name: 'Trevor Scott',
+                year: 'Sophomore'
+            },
+            {
+                number: 38,
+                name: 'Gavin Lindsay',
+                year: 'Grad'
+            },
+            {
+                number: 40,
+                name: 'Rishav Rout',
+                year: 'Grad*'
+            },
+            {
+                number: 42,
+                name: 'Kastan Day',
+                year: 'Grad'
+            },
+            {
+                number: 52,
+                name: 'John Wolff',
+                year: 'Grad'
+            },
+            {
+                number: 70,
+                name: 'Kevin Zhou',
+                year: 'Junior'
+            },
+            {
+                number: 74,
+                name: 'Anthony Ruzzo*',
+                year: 'Grad*'
+            },
+            {
+                number: 82,
+                name: 'Brandon Carrel',
+                year: 'Grad*'
+            },
+            {
+                number: undefined,
+                name: 'Brad Bollinger',
+                year: 'Coach'
+            },
+            {
+                number: undefined,
+                name: 'Eric Badger',
+                year: 'Coach'
+            },
+            {
+                number: undefined,
+                name: '* on year indicates extended eligibility for Fall 2021 Season',
+                year: ''
+            }
+        ]
+    },
+    {
         year: 2020,
         imagePath: './assets/team-photo-2020.jpg',
         players: [

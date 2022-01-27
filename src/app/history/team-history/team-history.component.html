@@ -48,6 +48,14 @@
 
         </div>
     </div>
+    <div #2019dropdown class="ui dropdown item">
+        2019-<i class="dropdown icon"></i>
+        <div class="menu">
+            <div routerLink="/history/2019" [routerLinkActive]="['active']" class="item">2019</div>
+            <div routerLink="/history/2020" [routerLinkActive]="['active']" class="item">2020</div>
+            <div routerLink="/history/2021" [routerLinkActive]="['active']" class="item">2021</div>
+        </div>
+    </div>
 </div>
 <h2 class="ui header">{{year}}</h2>
 <ng-container *ngFor="let historyYear of historyData">
