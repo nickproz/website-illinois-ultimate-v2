@@ -1,2 +1,3 @@
 - Date picker for absent form
 - Google Tag Manager
+- Picture Slideshow for Home Page
